@@ -1,7 +1,8 @@
 <template>
-  <div class="w-20 h-20 bg-blue-600">
-    Hello
-  </div>
+  <nuxt-layout>
+    <nuxt-loading-indicator :height="5" />
+    <nuxt-page />
+  </nuxt-layout>
 </template>
 
 <style>
