@@ -2,6 +2,7 @@
   <nuxt-layout>
     <nuxt-loading-indicator :height="5" />
     <nuxt-page />
+    <page-footer />
   </nuxt-layout>
 </template>
 
