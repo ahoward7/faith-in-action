@@ -1,8 +1,9 @@
 <template>
   <nuxt-layout>
     <nuxt-loading-indicator :height="5" />
+    <fia-navbar />
     <nuxt-page />
-    <page-footer />
+    <fia-footer />
   </nuxt-layout>
 </template>
 
