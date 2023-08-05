@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'fia-yellow': '#e2d000',
+        'fia-yellow': '#efc600',
+        'fia-white': '#ffffff',
+        'fia-black': '#000000',
+        'fia-blue': '#0041EF',
       }
     },
   },
