@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex justify-center items-center bg-fia-black py-4">
     <nuxt-link to="/" class="absolute left-0">
-      <img src="~/assets/images/fia-logo.jpg" class="h-16 pl-1" />
+      <img src="~/assets/images/logos/fia-logo.png" class="h-16 pl-1" />
     </nuxt-link>
     <div class="flex justify-center">
       <fia-navbar-item to="/">Home</fia-navbar-item>

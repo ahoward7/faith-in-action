@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         'fia-yellow': '#efc600',
         'fia-white': '#ffffff',
-        'fia-black': '#000000',
+        'fia-black': '#1d1d1d',
         'fia-blue': '#0041EF',
       }
     },
