@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'fia-yellow': '#efc600',
-        'fia-white': '#ffffff',
+        'fia-white': '#f8f8f8',
         'fia-black': '#1d1d1d',
         'fia-blue': '#0041EF',
       }
