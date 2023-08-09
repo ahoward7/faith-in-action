@@ -24,8 +24,23 @@
     <div class="lg:hidden">
       <img src="~/assets/images/logos/fia-text-white-transparent.png" class="h-12 pr-4">
     </div>
-    <div class="absolute lg:hidden right-0">
-      <img src="~/assets/images/fia-hamburger.png" class="h-12 pr-4">
+    <div class="bar-focus absolute lg:hidden right-0" tabindex="0" @focusout="closeSidebar">
+      <img src="~/assets/images/fia-hamburger.png" class="h-12 pr-4 cursor-pointer" @click="openSidebar">
+      <fia-navbar-side @close-sidebar="closeSidebar"></fia-navbar-side>
     </div>
   </div>
 </template>
+
+<script setup>
+function openSidebar() {
+  const focus = document.querySelector('.bar-focus')
+  const bar = document.querySelector('.bar')
+  focus.focus()
+  bar.style.height = '648px'
+}
+
+function closeSidebar() {
+  const bar = document.querySelector('.bar')
+  bar.style.height = '0px'
+}
+</script>

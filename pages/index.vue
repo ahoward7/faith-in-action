@@ -15,6 +15,6 @@
         </div>
       </page-max-1920>
     </div>
-    <page-full class="bg-fia-yellow"></page-full>
+    <page-full></page-full>
   </div>
 </template>
