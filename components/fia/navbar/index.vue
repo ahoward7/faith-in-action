@@ -1,7 +1,7 @@
 <template>
   <div class="relative min-h-20 flex justify-center items-center bg-fia-black py-4">
     <nuxt-link to="/" class="absolute left-0">
-      <img src="~/assets/images/logos/fia-logo-transparent.png" class="h-16 lg:h-24 2xl:h-16 pl-1" />
+      <img src="~/assets/images/logos/fia-logo.png" class="h-16 lg:h-24 2xl:h-16 pl-1" />
     </nuxt-link>
     <div class="hidden lg:flex justify-center flex-col 2xl:flex-row">
       <div class="flex justify-center">
