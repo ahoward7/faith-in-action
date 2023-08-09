@@ -4,6 +4,8 @@
     <fia-logos />
     <fia-slogan />
     <fia-mission />
-    <fia-vision class="bg-fia-yellow" />
+    <fia-vision />
+    <fia-services />
+    <fia-volunteer />
   </div>
 </template>

@@ -1,0 +1,21 @@
+<template>
+  <page-max-1920 class="flex p-10 lg:p-20 2xl:py-40">
+    <div class="flex justify-center pb-10 lg:pb-20">
+      <img src="~/assets/images/logos/fia-services-text.png" class="max-h-36">
+    </div>
+    <fia-text class="flex flex-col md:flex-row bg-fia-yellow">
+      <div class="flex justify-center md:justify-start pb-16 md:pb-0">
+        <div class="flex flex-col gap-4">
+          <fia-services-bullet>Transportation</fia-services-bullet>
+          <fia-services-bullet>Friendly Visits</fia-services-bullet>
+          <fia-services-bullet>Shopping</fia-services-bullet>
+          <fia-services-bullet>Home Repairs</fia-services-bullet>
+          <fia-services-bullet>Housekeeping</fia-services-bullet>
+        </div>
+      </div>
+      <div class="grow flex justify-center items-center">
+        <fia-button-home to="/services">Learn More</fia-button-home>
+      </div>
+    </fia-text>
+  </page-max-1920>
+</template>

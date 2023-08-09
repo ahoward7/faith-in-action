@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex justify-center">
+  <div class="w-full flex justify-center bg-fia-yellow">
     <page-max-1920 class="p-10 lg:p-20 2xl:py-40">
       <div class="pb-10 lg:pb-20">
         <img src="~/assets/images/logos/fia-vision-text.png" class="max-h-34">
