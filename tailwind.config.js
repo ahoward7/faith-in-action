@@ -25,9 +25,11 @@ module.exports = {
         '20': '5rem',
       },
       maxHeight: {
+        '34': '8.5rem',
         '86': '22rem',
       },
       maxWidth: {
+        '1200': '1200px',
         '1920': '1920px',
       },
       screens: {

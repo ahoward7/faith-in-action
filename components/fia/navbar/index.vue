@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-20 flex justify-center items-center bg-fia-black py-4">
+  <div class="rem-light relative min-h-20 flex justify-center items-center bg-fia-black py-4">
     <nuxt-link to="/" class="absolute left-0">
       <img src="~/assets/images/logos/fia-logo.png" class="h-16 lg:h-24 2xl:h-16 pl-1" />
     </nuxt-link>

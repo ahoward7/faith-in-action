@@ -3,6 +3,7 @@
     <page-header />
     <fia-logos />
     <fia-slogan />
-    <page-full></page-full>
+    <fia-mission />
+    <fia-vision class="bg-fia-yellow" />
   </div>
 </template>
