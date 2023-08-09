@@ -1,9 +1,9 @@
 <template>
-  <div class="relative flex justify-center items-center bg-fia-black py-4">
+  <div class="relative min-h-20 flex justify-center items-center bg-fia-black py-4">
     <nuxt-link to="/" class="absolute left-0">
       <img src="~/assets/images/logos/fia-logo-transparent.png" class="h-16 lg:h-24 2xl:h-16 pl-1" />
     </nuxt-link>
-    <div class="flex justify-center flex-col 2xl:flex-row">
+    <div class="hidden lg:flex justify-center flex-col 2xl:flex-row">
       <div class="flex justify-center">
         <fia-navbar-item to="/">Home</fia-navbar-item>
         <fia-navbar-item to="/about">About Us</fia-navbar-item>
@@ -18,8 +18,14 @@
         <fia-navbar-item to="/contact">Contact Us</fia-navbar-item>
       </div>
     </div>
-    <div class="relative lg:absolute 2xl:relative right-0">
+    <div class="hidden lg:absolute lg:block right-0">
       <fia-navbar-item to="/" class="bg-fia-blue">Donate</fia-navbar-item>
+    </div>
+    <div class="lg:hidden">
+      <img src="~/assets/images/logos/fia-text-white-transparent.png" class="h-12 pr-4">
+    </div>
+    <div class="absolute lg:hidden right-0">
+      <img src="~/assets/images/fia-hamburger.png" class="h-12 pr-4">
     </div>
   </div>
 </template>
