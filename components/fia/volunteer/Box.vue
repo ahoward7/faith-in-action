@@ -4,9 +4,16 @@
       <slot name="header"/>
     </div>
     <div class="flex justify-center items-center 2xl:my-20">
-      <fia-button-home>
+      <fia-button-home :to="anchor">
         <slot name="button"/>
       </fia-button-home>
     </div>
   </div>
 </template>
+
+<script setup>
+const props = defineProps({
+  anchor: String,
+})
+const { anchor } = props
+</script>

@@ -3,7 +3,7 @@
     <div class="h-20 sm:h-32 max-w-3xl 2xl:max-w-none">
       <slot />
     </div>
-    <fia-volunteer-box>
+    <fia-volunteer-box :anchor="anchor">
       <template v-slot:header>{{ header }}</template>
       <template v-slot:button>{{ button }}</template>
     </fia-volunteer-box>
@@ -14,6 +14,7 @@
 const props = defineProps({
   header: String,
   button: String,
+  anchor: String,
 })
-const { header, button } = props
+const { header, button, anchor } = props
 </script>
