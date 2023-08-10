@@ -3,15 +3,15 @@
     <nuxt-link to="/" class="absolute left-0">
       <img src="~/assets/images/logos/fia-logo.png" class="h-16 lg:h-24 2xl:h-16 pl-1" />
     </nuxt-link>
-    <div class="hidden lg:flex justify-center flex-col 2xl:flex-row">
-      <div class="flex justify-center">
+    <div class="hidden lg:flex justify-center flex-col 2xl:flex-row gap-6 2xl:gap-12">
+      <div class="flex justify-center gap-12">
         <fia-navbar-item to="/">Home</fia-navbar-item>
         <fia-navbar-item to="/about">About Us</fia-navbar-item>
         <fia-navbar-item to="/impact">Our Impact</fia-navbar-item>
         <fia-navbar-item to="/services">Services</fia-navbar-item>
         <fia-navbar-item to="/help">Need Help?</fia-navbar-item>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center gap-12">
         <fia-navbar-item to="/volunteer">Volunteer</fia-navbar-item>
         <fia-navbar-item to="/testimonials">Testimonials</fia-navbar-item>
         <fia-navbar-item to="/resources">Resources</fia-navbar-item>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="hidden lg:absolute lg:block right-0">
-      <fia-navbar-item to="/" class="bg-fia-blue">Donate</fia-navbar-item>
+      <fia-button-donate class="mr-4"/>
     </div>
     <div class="lg:hidden">
       <img src="~/assets/images/logos/fia-text-white-transparent.png" class="h-12 pr-4">
