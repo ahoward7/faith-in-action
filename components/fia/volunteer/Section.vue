@@ -3,7 +3,7 @@
     <div class="h-20 sm:h-32 max-w-3xl 2xl:max-w-none">
       <slot />
     </div>
-    <fia-volunteer-box :anchor="anchor">
+    <fia-volunteer-box :anchor="anchor" :class="boxStyle">
       <template v-slot:header>{{ header }}</template>
       <template v-slot:button>{{ button }}</template>
     </fia-volunteer-box>
@@ -15,6 +15,10 @@ const props = defineProps({
   header: String,
   button: String,
   anchor: String,
+  boxStyle: {
+    type: String,
+    default: "bg-fia-white"
+  }
 })
-const { header, button, anchor } = props
+const { header, button, anchor, boxStyle } = props
 </script>

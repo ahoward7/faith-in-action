@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-42vh 2xl:min-h-50vh bg-fia-black">
+  <div class="relative pb-24 bg-fia-black">
     <div class="grid grid-cols-2 2xl:grid-cols-3">
       <fia-footer-navbar />
       <fia-footer-partners class="hidden 2xl:flex" />

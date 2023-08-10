@@ -1,5 +1,5 @@
 <template>
-  <div class="bar absolute right-0 top-16 outline-none">
+  <div class="bar absolute z-20 right-0 top-16 outline-none">
     <div class="flex flex-col gap-4 bg-fia-black text-fia-white text-lg font-semibold pt-2 pb-8 px-8 rounded-bl-lg">
       <fia-navbar-item to="/">Home</fia-navbar-item>
       <fia-navbar-item to="/about">About Us</fia-navbar-item>
