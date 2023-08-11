@@ -1,9 +1,9 @@
 <template>
   <nuxt-layout>
     <nuxt-loading-indicator :height="5" />
-    <fia-navbar />
-    <nuxt-page />
-    <fia-footer />
+    <fia-navbar class="rem-light" />
+    <nuxt-page class="rem"/>
+    <fia-footer class="rem-light" />
   </nuxt-layout>
 </template>
 
