@@ -1,10 +1,10 @@
 <template>
   <fia-footer-section class="flex-col items-center gap-16">
     <div class="flex flex-col gap-6">
-      <div class="text-md md:text-lg lg:text-xl text-fia-yellow font-semibold" v-for="info in information">
+      <div class="text-md md:text-lg lg:text-xl text-fia-yellow font-semibold" v-for="info in contactInfo">
         {{ info }}
       </div>
-      <div class="flex justify-center items-center my-6 lg:my-12">
+      <div class="flex justify-center items-center my-2 lg:my-4">
         <img src="~/assets/images/logos/facebook.png" class="h-16" />
       </div>
       <div class="text-sm md:text-lg lg:text-xl text-fia-yellow font-semibold" v-for="info in bottomInformation">
@@ -15,13 +15,7 @@
 </template>
 
 <script setup>
-const information = [
-  "20 Broadway Mall PO Box 117, Hornell, NY 14843",
-  "ar@fiasteuben.org",
-  "Hornell: (607) 324-1138",
-  "Corning: (607) 936-0941",
-  "Office Hours: Monday - Friday 9am - 4pm",
-]
+import { contactInfo } from '~/utils/constants';
 const bottomInformation = [
   "Website by: Avery Howard",
 ]
