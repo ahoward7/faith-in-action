@@ -16,7 +16,7 @@ export const navItems = [
     url: '/help'
   },
   {
-    name: 'Volunteers',
+    name: 'Volunteer',
     url: '/volunteer'
   },
   {
