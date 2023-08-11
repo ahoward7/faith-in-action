@@ -17,6 +17,7 @@
 <script setup>
 const information = [
   "20 Broadway Mall PO Box 117, Hornell, NY 14843",
+  "ar@fiasteuben.org",
   "Hornell: (607) 324-1138",
   "Corning: (607) 936-0941"
 ]
