@@ -1,7 +1,7 @@
 <template>
   <page-max-1920>
     <div class="flex justify-around items-center flex-col gap-10 sm:gap-20 py-10 sm:py-20 2xl:flex-row 2xl:gap-0 ">
-      <img src="~/assets/images/logos/fia-logo-transparent.png" class="h-200 sm:h-400 xl:h-500 3xl:h-600">
+      <fia-logo />
       <img src="~/assets/images/logos/fia-text-transparent.png" class="h-28 sm:h-60 xl:h-72 3xl:h-80">
     </div>
   </page-max-1920>
