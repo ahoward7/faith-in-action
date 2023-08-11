@@ -4,7 +4,7 @@ export const navItems = [
     url: '/'
   },
   {
-    name: 'About',
+    name: 'About Us',
     url: '/about'
   },
   {
@@ -24,7 +24,7 @@ export const navItems = [
     url: '/testimonials'
   },
   {
-    name: 'Contact',
+    name: 'Contact Us',
     url: '/contact'
   }
 ]
