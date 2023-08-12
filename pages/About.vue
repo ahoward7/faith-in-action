@@ -11,7 +11,7 @@
     <page-text-wrapper>
       <page-sub-header>Our Team</page-sub-header>
       <div class="w-full flex flex-col lg:flex-row gap-16">
-        <fia-about-team-wrapper class="basis-1/2">
+        <page-text-wrapper class="basis-1/2">
           <img src="~/assets/images/man-placeholder.jpg" class="h-60 rounded-3xl border-4 border-fia-black">
           <page-text>
             The year was 1995 when I first heard Tippy Irwin talk about a new program starting up that would help the elderly continue to live independently. That program was Interfaith Volunteer Caregivers Program (IVCP). Tippy was the inaugural direcotr of IVCP, and a very dynamic speaker! My lovely wife Kathy recalls that I leaned over to her and said "When we're not busy with kids anymore, I'd like to be involved with that group."
@@ -19,13 +19,13 @@
           <page-text>
             Fast forward to 2003... the grant that is funding my position is running out, making it likely I'll be looking for employment in a few months. Kathy hears that Betty Jones, the then Executive Director of IVCP (which is transitioning it's name to "Faith in Action") is retiring and they are looking for a new director. Long story short, I was fortunate to get an interview and blessed to be hired as the Executive Director, starting the day after Labor Day, 2003! My wish from 1995 came true in a way I never would have expected! It is both humorous and humbling to look back and see how a sovereign God wove my disparate jobs and experiences together for His own purposes and on His own timetable!
           </page-text>
-        </fia-about-team-wrapper>
-        <fia-about-team-wrapper class="basis-1/2">
+        </page-text-wrapper>
+        <page-text-wrapper class="basis-1/2">
           <img src="~/assets/images/angela.png" class="h-60 rounded-3xl border-4 border-fia-black">
           <page-text>
             Angela Jenkins is the office manager at Faith in Action. She has been with FIA since 2016. Angela manages day-to-day operations, scheduling, and works closely with our recipients and volunteers. It will most likely be her friendly voice on the other end of the phone. Angela lives in Hornell with her husband, two sons, and their dog.
           </page-text>
-        </fia-about-team-wrapper>
+        </page-text-wrapper>
       </div>
     </page-text-wrapper>
     <page-text-wrapper>

@@ -1,0 +1,33 @@
+<template>
+  <div class="w-full flex flex-col text-2xl md:text-3xl " :class="wrapperClass">
+    <div class="max-w-3xl rounded-3xl border-4 border-dotted p-6 leading-10 2xl:leading-12" :class="testimonialClass">
+      {{ text }}
+    </div>
+    <div class="py-6 px-12">
+      - {{ name }}
+    </div>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps({
+  name: {
+    type: String,
+    required: true,
+  },
+  text: {
+    type: String,
+    required: true,
+  },
+  wrapperClass: {
+    type: String,
+    default: '',
+  },
+  testimonialClass: {
+    type: String,
+    default: '',
+  },
+});
+
+const { name, text, wrapperClass, testimonialClass } = toRefs(props);
+</script>

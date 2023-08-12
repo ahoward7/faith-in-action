@@ -45,7 +45,10 @@ module.exports = {
       },
       screens: {
         '3xl': '1920px',
-      }
+      },
+      lineHeight: {
+        '12': '3rem',
+      },
     },
   },
   plugins: [],
