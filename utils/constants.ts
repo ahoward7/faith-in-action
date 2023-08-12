@@ -36,3 +36,17 @@ export const contactInfo = [
   "Corning: (607) 936-0941",
   "Office Hours: Monday - Friday 9am - 4pm",
 ]
+
+export const boardMembers = [
+  "President: Dorothy Behan",
+  "Vice President: Heather Lisi",
+  "Treasurer: Kate Paterson",
+  "Secretary: TBD",
+  "Christy Balliett",
+  "Carolin Campbell",
+  "Amy Irvine",
+  "Ellen Mason",
+  "Bill Gunther",
+  "Janet Farnsworth",
+  "David Barnard"
+]

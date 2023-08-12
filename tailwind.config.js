@@ -22,10 +22,16 @@ module.exports = {
         '500': '500px',
         '600': '600px',
       },
+      width: {
+        '76': '19rem',
+      },
       minHeight: {
         '20': '5rem',
         '42vh': '42vh',
         '50vh': '50vh',
+      },
+      minWidth: {
+        '52': '13rem',
       },
       maxHeight: {
         '26': '6.5rem',
