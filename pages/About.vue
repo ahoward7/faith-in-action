@@ -29,6 +29,18 @@
       </div>
     </page-text-wrapper>
     <page-text-wrapper>
+      <page-sub-header>Our Impact</page-sub-header>
+      <page-text>
+        Since we began in 1995 we have helped thousands of older adults remain in their homes by providing non-hands-on services.
+      </page-text>
+      <page-text>
+        From 2017 through 2020 (even during the pandemic lockdown!) we have provided nearly 17,000 services, over half of those transporting individuals where they needed to go.
+      </page-text>
+      <page-text class="flex justify-center">
+        <img src="~/assets/images/total-services.png" class="h-500 rounded-3xl">
+      </page-text>
+    </page-text-wrapper>
+    <page-text-wrapper>
       <page-sub-header>Board of Directors</page-sub-header>
       <page-text class="w-full flex justify-center flex-wrap gap-8">
         <div v-for="member in boardMembers" :key="member" class="w-76 shrink-0 text-center bg-fia-yellow py-2 px-4 rounded-md">
