@@ -37,7 +37,7 @@
         From 2017 through 2020 (even during the pandemic lockdown!) we have provided nearly 17,000 services, over half of those transporting individuals where they needed to go.
       </page-text>
       <page-text class="flex justify-center">
-        <img src="~/assets/images/total-services.png" class="h-500 rounded-3xl">
+        <img src="~/assets/images/total-services.png" class="w-full max-w-900 rounded-3xl">
       </page-text>
     </page-text-wrapper>
     <page-text-wrapper>

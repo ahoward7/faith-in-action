@@ -25,7 +25,7 @@
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
           </template>
         </fia-services-section>
-        <fia-services-section>
+        <fia-services-section flexClass="flex-col-reverse">
           <template v-slot:left>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
           </template>
@@ -54,7 +54,7 @@
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
           </template>
         </fia-services-section>
-        <fia-services-section>
+        <fia-services-section flexClass="flex-col-reverse">
           <template v-slot:left>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
           </template>
@@ -80,7 +80,7 @@
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
           </template>
         </fia-services-section>
-        <fia-services-section>
+        <fia-services-section flexClass="flex-col-reverse">
           <template v-slot:right-header>
             In-Home Respite Care
           </template>
@@ -112,7 +112,7 @@
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
           </template>
         </fia-services-section>
-        <fia-services-section>
+        <fia-services-section flexClass="flex-col-reverse">
           <template v-slot:left>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
           </template>

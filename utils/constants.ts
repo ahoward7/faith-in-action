@@ -40,11 +40,11 @@ export const contactInfo = {
   },
   hornell_phone: {
     label: "Hornell Phone",
-    value: "Hornell: (607) 324-1138",
+    value: "(607) 324-1138",
   },
   corning_phone: {
     label: "Corning Phone",
-    value: "Corning: (607) 936-0941",
+    value: "(607) 936-0941",
   },
   office_hours: {
     label: "Office Hours",

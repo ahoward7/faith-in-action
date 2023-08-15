@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex gap-20">
+  <div class="w-full flex lg:flex-row gap-20" :class="flexClass">
     <div class="basis-1/2 flex flex-col items-center justify-center">
       <div class="w-full text-5xl text-fia-yellow font-bold mb-4">
         <slot name="left-header" />
@@ -14,3 +14,12 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const props = defineProps({
+  flexClass: {
+    type: String,
+    default: 'flex-col'
+  }
+})
+</script>

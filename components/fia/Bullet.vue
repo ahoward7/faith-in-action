@@ -8,12 +8,14 @@
     </div>
   </page-text>
   <page-text v-else-if="label">
-    <div class="flex items-center gap-2">
-      <div class="shrink-0 flex flex-col items-center text-xl font-bold py-1 rounded-xl">
-        {{ label }}:
-      </div>
-      <div class="w-full">
-        <slot/>
+    <div class="flex flex-col gap-2">
+      <div class="flex flex-wrap gap-2 items-center">
+        <div class="shrink-0 text-xl font-bold py-1 rounded-xl">
+          {{ label }}:
+        </div>
+        <div>
+          <slot/>
+        </div>
       </div>
     </div>
   </page-text>
