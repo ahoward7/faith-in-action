@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'fia-yellow': '#efc600',
+        'fia-grey': '#e5e5e5',
         'fia-white': '#f8f8f8',
         'fia-black': '#1d1d1d',
         'fia-blue': '#0041EF',
@@ -44,6 +45,8 @@ module.exports = {
         '48': '12rem',
         '80': '20rem',
         '92': '23rem',
+        '128': '31rem',
+        '600': "600px",
         '1200': '1200px',
         '1920': '1920px',
       },

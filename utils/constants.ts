@@ -29,13 +29,28 @@ export const navItems = [
   }
 ]
 
-export const contactInfo = [
-  "20 Broadway Mall PO Box 117, Hornell, NY 14843",
-  "ar@fiasteuben.org",
-  "Hornell: (607) 324-1138",
-  "Corning: (607) 936-0941",
-  "Office Hours: Monday - Friday 9am - 4pm",
-]
+export const contactInfo = {
+  address: {
+    label: "Address",
+    value: "20 Broadway Mall PO Box 117, Hornell, NY 14843"
+  },
+  email: {
+    label: "Email",
+    value: "ar@fiasteuben.org",
+  },
+  hornell_phone: {
+    label: "Hornell Phone",
+    value: "Hornell: (607) 324-1138",
+  },
+  corning_phone: {
+    label: "Corning Phone",
+    value: "Corning: (607) 936-0941",
+  },
+  office_hours: {
+    label: "Office Hours",
+    value: "Monday - Friday 9am - 4pm",
+  }
+}
 
 export const boardMembers = [
   "President: Dorothy Behan",
