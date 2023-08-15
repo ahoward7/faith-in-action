@@ -50,7 +50,6 @@
     </page-text-wrapper>
   </page-max-1920>
 </template>
-
 <script setup>
 import { boardMembers } from '~/utils/constants'
 const historyText = [

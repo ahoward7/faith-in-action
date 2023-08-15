@@ -14,12 +14,12 @@
             Shopping
           </template>
           <template v-slot:left>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               Volunteers will take you to the store(s) and provide assistance if requested
-            </fia-volunteer-bullet>
-            <fia-volunteer-bullet>
+            </fia-bullet>
+            <fia-bullet>
               A volunteer can pick up your grocery list and shop for you, if you're unable to do it
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
           <template v-slot:right>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
@@ -33,12 +33,12 @@
             Transportation
           </template>
           <template v-slot:right>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               Medical, Dental, Therapy, Social, Errands, Hairdresser, Laundromat
-            </fia-volunteer-bullet>
-            <fia-volunteer-bullet>
+            </fia-bullet>
+            <fia-bullet>
               Volunteers pick you up at your door and return you home
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
         </fia-services-section>
         <fia-services-section>
@@ -46,9 +46,9 @@
             Handyman
           </template>
           <template v-slot:left>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               We can help with minor home repairs (doors that won't latch, loose step or railing, dripping faucets, etc.)
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
           <template v-slot:right>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
@@ -62,9 +62,9 @@
             Yard Work
           </template>
           <template v-slot:right>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               Volunteer(s) can do seasonal yard work, but we do not offer weekly mowing.
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
         </fia-services-section>
         <fia-services-section>
@@ -72,9 +72,9 @@
             Friendly Visits
           </template>
           <template v-slot:left>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               A volunteer can come by for a visit to keep you company
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
           <template v-slot:right>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
@@ -85,15 +85,15 @@
             In-Home Respite Care
           </template>
           <template v-slot:right>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               Our “Give Them A Break” caregiver respite program allows the caregiver of a loved one with dementia/Alzheimer's disease an opportunity to get some time for themselves.
-            </fia-volunteer-bullet>
-            <fia-volunteer-bullet>
+            </fia-bullet>
+            <fia-bullet>
               Bring your loved one to the program, where trained volunteers play games, do crafts, visit, have lunch and snack from 10AM - 2:00PM every Thursday.
-            </fia-volunteer-bullet>
-            <fia-volunteer-bullet>
+            </fia-bullet>
+            <fia-bullet>
               If the individual doesn't require hands-on assistance, e.g. toileting, feeding, etc., we can have a volunteer sit with them so the caregiver can go out.
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
           <template v-slot:left>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
@@ -104,9 +104,9 @@
             Telephone Reassurance
           </template>
           <template v-slot:left>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               A volunteer will give you a call on a regular basis to check in and visit.
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
           <template v-slot:right>
             <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
@@ -120,9 +120,9 @@
             Housekeeping
           </template>
           <template v-slot:right>
-            <fia-volunteer-bullet>
+            <fia-bullet>
               A volunteer will come run the vacuum, help change the bedding, help with laundry, etc. This is “light housekeeping”, done periodically, not daily
-            </fia-volunteer-bullet>
+            </fia-bullet>
           </template>
         </fia-services-section>
       </div>

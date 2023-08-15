@@ -16,21 +16,21 @@
       <page-secondary-header>
         We are looking for volunteers who can help with the following:
       </page-secondary-header>
-      <fia-volunteer-bullet>
+      <fia-bullet>
         Light Housekeeping and Visiting: Requests for aid in light housekeeping and friendly visits are pouring in from the Corning/Painted Post area. Volunteer shortages in this region are hindering our assistance. If you're interested or know someone who could help, please reach out.
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         Wednesday Drivers Needed: Wednesdays present challenges for finding drivers, especially in the southeastern county (Hornby, Caton, Lindley, Coopers Plains, Corning, Painted Post). Urgent appointments occasionally can't be rescheduled. Could you spare a few hours on Wednesdays to assist?
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         Drivers Required in Canisteo/Greenwood and Wayland/Cohocton: Additional drivers are needed in Canisteo/Greenwood and Wayland/Cohocton. While grateful for dedicated volunteers making multiple trips weekly, we aim to avoid overwhelming them. Can you help by transporting someone to town once or twice a month?
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         Tech-Savvy Volunteers for Elderly Care: Seeking individuals with technical skills to connect elderly care recipients with distant loved ones via video conferencing (Skype, Google Hangouts, FaceTime). Bring joy and connection to their lives.
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         Ramp Building Apprentices: Our ramp building team seeks apprentice volunteers with strength. Currently focused on the western county (Arkport/Hornell/Canisteo), personnel availability is the only limitation. Join our team or learn from them to contribute across STNY. Contact us today!
-      </fia-volunteer-bullet>
+      </fia-bullet>
     </page-text-wrapper>
     <page-text-wrapper>
       <page-sub-header>
@@ -42,21 +42,21 @@
       <page-secondary-header>
         To get a better picture of who we serve, note the following statistics of our care recipients:
       </page-secondary-header>
-      <fia-volunteer-bullet>
+      <fia-bullet>
         85% Female
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         15% Male
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         33% between 60-74
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         55% over age 75
-      </fia-volunteer-bullet>
-      <fia-volunteer-bullet>
+      </fia-bullet>
+      <fia-bullet>
         66% live alone
-      </fia-volunteer-bullet>
+      </fia-bullet>
     </page-text-wrapper>
     <page-text-wrapper>
       <page-sub-header>

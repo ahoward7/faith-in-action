@@ -14,6 +14,7 @@ module.exports = {
         'fia-blue': '#0041EF',
       },
       height: {
+        '9': '2.25rem',
         '100': '100px',
         '200': '200px',
         '300': '300px',
@@ -41,6 +42,7 @@ module.exports = {
       },
       maxWidth: {
         '48': '12rem',
+        '80': '20rem',
         '92': '23rem',
         '1200': '1200px',
         '1920': '1920px',
