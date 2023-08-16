@@ -13,6 +13,21 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css',
   ],
+  modules: [
+    ['nuxt-mail', {
+      message: {
+        to: 'avery.d.howard@gmail.com',
+      },
+      smtp: {
+        host: "sandbox.smtp.mailtrap.io",
+        port: 2525,
+        auth: {
+          user: "522c0e974734a0",
+          pass: "582a36586966c8"
+        }
+      },
+    }],
+  ],
   app: {
     head: {
       charset: 'utf-8',
