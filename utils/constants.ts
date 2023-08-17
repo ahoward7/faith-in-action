@@ -48,7 +48,7 @@ export const contactInfo = {
   },
   office_hours: {
     label: "Office Hours",
-    value: "Monday - Friday 9am - 4pm",
+    value: "Mon - Fri : 9am - 4pm",
   }
 }
 
