@@ -13,7 +13,9 @@ module.exports = {
         'fia-white': '#f8f8f8',
         'fia-black': '#1d1d1d',
         'fia-blue': '#0041EF',
-        'fia-grey-red': '#FFC9C9',
+        'fia-red': '#FFC9C9',
+        'fia-green': '#C9FFD1',
+
       },
       height: {
         '9': '2.25rem',

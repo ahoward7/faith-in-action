@@ -20,10 +20,10 @@
         v-else type="text"
         :value="data"
         @input="emit('update:data', $event.target.value)"
-        @focusin="focusOut = false"
-        @focusout="focusOut = true"
+        @focusin="invalid = false"
+        @focusout="checkValid()"
         class="max-w-128 w-full text-xl bg-fia-grey p-2 rounded-md"
-        :class="required && focusOut && data.length === 0 ? 'bg-fia-grey-red' : 'bg-fia-black'"
+        :class="invalid ? 'bg-fia-red' : 'bg-fia-black'"
       />
     </div>
   </div>
@@ -54,5 +54,11 @@ const props = defineProps({
   }
 })
 
-const focusOut = ref(false)
+function checkValid() {
+  if (props.required && props.data.length === 0) {
+    invalid.value = true
+  }
+}
+
+const invalid = ref(false)
 </script>

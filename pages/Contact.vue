@@ -12,8 +12,14 @@
           </page-sub-header>
           <page-text class="flex flex-col items-center gap-8 mt-8">
             <page-input v-for="item in data" :label="item.required ? `${item.label} *` : item.label" :type="item.type" v-model:data="item.data" :options="item.options" :required="item.required"/>
-            <div v-if="!dataValid" class="text-center bg-fia-grey-red py-1 px-2 rounded-md">
+            <div v-if="!dataValid" class="text-center bg-fia-red py-1 px-2 rounded-md">
               Please fill out all the valid fields
+            </div>
+            <div v-if="successSend" class="text-center bg-fia-green py-1 px-2 rounded-md">
+              Message sent
+            </div>
+            <div v-if="errorSend" class="text-center bg-fia-red py-1 px-2 rounded-md">
+              Error sending message, please contact us directly
             </div>
             <fia-button-page @click="sendEmail">Submit</fia-button-page>
           </page-text>
@@ -36,6 +42,8 @@
 <script setup>
 import { contactInfo } from '~/utils/constants'
 const dataValid = ref(true)
+const successSend = ref(false)
+const errorSend = ref(false)
 
 const data = ref({
   interest: {
@@ -100,11 +108,34 @@ function sendEmail() {
 
   if (!dataIsValid()) return
 
-  mail.send({
-    from: getName(),
-    subject: getSubject(),
-    html: getBody()
-  })
+  try {
+    mail.send({
+      from: getName(),
+      subject: getSubject(),
+      html: getBody()
+    })
+    success()
+  }
+  catch (error) {
+    console.log(error)
+    error()
+  }
+}
+
+function success() {
+  Object.values(data.value).forEach(item => item.data = '')
+
+  successSend.value = true
+  setTimeout(() => {
+    successSend.value = false
+  }, 3000)
+}
+
+function error() {
+  errorSend.value = true
+  setTimeout(() => {
+    errorSend.value = false
+  }, 3000)
 }
 
 function getName() {
