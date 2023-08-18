@@ -2,9 +2,9 @@
   <page-max-1920 class="bg-fia-black">
     <div class="relative min-h-20 flex justify-center items-center py-4">
       <nuxt-link to="/" class="absolute left-0">
-        <img src="~/assets/images/logos/fia-logo.png" class="h-16 md:h-20 lg:h-16 pl-1" />
+        <img src="~/assets/images/logos/fia-logo.png" class="h-16 md:h-20 xl:h-16 pl-1" />
       </nuxt-link>
-      <div class="hidden md:flex justify-center flex-col lg:flex-row gap-6 lg:gap-12">
+      <div class="hidden md:flex justify-center flex-col xl:flex-row gap-6 xl:gap-12">
         <div class="flex justify-center gap-10 xl:gap-12">
           <fia-navbar-item v-for="item in topItems" :key="item.name" :to="item.url">
             {{ item.name }}
