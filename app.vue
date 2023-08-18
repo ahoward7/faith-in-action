@@ -9,6 +9,23 @@
 
 <script setup>
 onMounted(() => {
+  const offset = window.innerHeight / 6
+  document.querySelectorAll('.fu').forEach((el) => {
+    if (el.getBoundingClientRect().top < window.innerHeight - offset) {
+      el.classList.add('fade-up')
+    }
+  })
+  document.querySelectorAll('.fl').forEach((el) => {
+    if (el.getBoundingClientRect().top < window.innerHeight - offset) {
+      el.classList.add('fade-left')
+    }
+  })
+  document.querySelectorAll('.fr').forEach((el) => {
+    if (el.getBoundingClientRect().top < window.innerHeight - offset) {
+      el.classList.add('fade-right')
+    }
+  })
+
   window.addEventListener('scroll', () => {
     const offset = window.innerHeight / 6
     document.querySelectorAll('.fu').forEach((el) => {
