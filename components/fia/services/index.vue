@@ -1,9 +1,9 @@
 <template>
   <page-max-1920 class="flex p-10 lg:p-20 2xl:py-40">
     <div class="flex justify-center pb-10 lg:pb-20">
-      <img src="~/assets/images/logos/fia-services-text.png" class="max-h-36">
+      <img src="~/assets/images/logos/fia-services-text.png" class="fr max-h-36">
     </div>
-    <fia-text class="flex flex-col md:flex-row bg-fia-yellow">
+    <fia-text class="fl flex flex-col md:flex-row bg-fia-yellow">
       <div class="flex justify-center md:justify-start pb-16 md:pb-0">
         <div class="flex flex-col gap-4">
           <fia-services-bullet>Transportation</fia-services-bullet>
