@@ -10,7 +10,7 @@
 <script setup>
 onMounted(() => {
   window.addEventListener('scroll', () => {
-    const offset = window.innerHeight / 4
+    const offset = window.innerHeight / 6
     document.querySelectorAll('.fu').forEach((el) => {
       if (el.getBoundingClientRect().top < window.innerHeight - offset) {
         el.classList.add('fade-up')

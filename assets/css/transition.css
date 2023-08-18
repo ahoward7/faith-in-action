@@ -1,12 +1,4 @@
-.fu {
-  opacity: 0;
-}
-
-.fl {
-  opacity: 0;
-}
-
-.fr {
+.fu, .fl, .fr {
   opacity: 0;
 }
 
