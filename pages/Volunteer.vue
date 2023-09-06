@@ -73,12 +73,22 @@
       </page-text>
     </page-text-wrapper>
     <page-text-wrapper>
+      <page-sub-header>Want to Volunteer?</page-sub-header>
+      <div class="flex flex-col md:flex-row gap-6">
+        <page-text class="basis-2/3">
+          Sign up now and fill out the contact form. We will be in touch to answer your questions
+          and send you an application. We’ll review it, set up an orientation and background check, and get you
+          started! As a Faith in Action volunteer, you will have a unique login to the RideScheduler program that
+          gives you the freedom to schedule yourself for volunteer opportunities that fit your calendar,
+          preferences, and location! We offer mileage reimbursement at the current IRS business rate.
+        </page-text>
+        <div class="basis-1/3 flex justify-center items-center">
+          <fia-button-page to="/contact">Sign Up</fia-button-page>
+        </div>
+      </div>
       <page-sub-header>Already a Volunteer?</page-sub-header>
       <page-text>
-        We thank you for your time and dedication. We are always looking for more volunteers to help us serve the elderly in the Southern Teers. If you know of someone who would be interested in volunteering, please encourage them to contact us.
-      </page-text>
-      <page-text>
-        Need access to the ride sheet? Click the button below.
+        Just click the RideScheduler link to login and report your hours or see what opportunities are available. Remember to check back, as they change frequently! Thank you for all you do!
       </page-text>
       <page-text>
         <nuxt-link to="https://fiasteuben.securescheduler.org/">
