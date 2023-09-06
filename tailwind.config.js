@@ -43,6 +43,7 @@ module.exports = {
         '34': '8.5rem',
         '48': '12rem',
         '86': '22rem',
+        '130': '32.5rem',
         '500': '500px',
       },
       maxWidth: {

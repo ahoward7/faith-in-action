@@ -22,12 +22,12 @@
             </fia-bullet>
           </template>
           <template v-slot:right>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-cart.png" class="max-w-92">
           </template>
         </fia-services-section>
-        <fia-services-section flexClass="flex-col-reverse">
+        <fia-services-section class="py-10" flexClass="flex-col-reverse">
           <template v-slot:left>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-bus.png" class="max-w-92">
           </template>
           <template v-slot:right-header>
             Transportation
@@ -51,12 +51,12 @@
             </fia-bullet>
           </template>
           <template v-slot:right>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-wrench.png" class="max-w-92">
           </template>
         </fia-services-section>
         <fia-services-section flexClass="flex-col-reverse">
           <template v-slot:left>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-rake.png" class="max-w-92">
           </template>
           <template v-slot:right-header>
             Yard Work
@@ -77,7 +77,7 @@
             </fia-bullet>
           </template>
           <template v-slot:right>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-visit.png" class="max-w-92">
           </template>
         </fia-services-section>
         <fia-services-section flexClass="flex-col-reverse">
@@ -96,7 +96,7 @@
             </fia-bullet>
           </template>
           <template v-slot:left>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-care.png" class="max-w-92">
           </template>
         </fia-services-section>
         <fia-services-section>
@@ -109,12 +109,12 @@
             </fia-bullet>
           </template>
           <template v-slot:right>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-phone.png" class="max-w-92 max-h-130">
           </template>
         </fia-services-section>
         <fia-services-section flexClass="flex-col-reverse">
           <template v-slot:left>
-            <img src="~/assets/images/logos/fia-logo-transparent.png" class="max-w-92">
+            <img src="~/assets/images/services/fia-vacuum.png" class="max-w-92">
           </template>
           <template v-slot:right-header>
             Housekeeping
