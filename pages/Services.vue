@@ -1,7 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
-      <fia-logo />
+      <img src="~/assets/images/headers/fia-services.png" class="px-8 max-h-86">
       <img src="~/assets/images/logos/fia-services-shortened-text.png" class="px-8 max-h-32">
     </page-header>
     <page-text-wrapper>
