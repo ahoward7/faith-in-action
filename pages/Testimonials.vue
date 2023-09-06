@@ -1,8 +1,12 @@
 <template>
   <page-max-1920>
     <page-header>
-      <img src="~/assets/images/headers/fia-testimonials.png" class="px-8 max-h-86">
-      <img src="~/assets/images/logos/fia-testimonials-text.png" class="px-8 max-h-26">
+      <div>
+        <img src="~/assets/images/headers/fia-testimonials.png" class="px-4 xl:px-8 max-h-86">
+      </div>
+      <div>
+        <img src="~/assets/images/logos/fia-testimonials-text.png" class="px-4 xl:px-8 max-h-32">
+      </div>
     </page-header>
     <page-text-wrapper>
       <page-sub-header>
