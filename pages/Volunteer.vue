@@ -86,6 +86,8 @@
           <fia-button-page to="/contact">Sign Up</fia-button-page>
         </div>
       </div>
+    </page-text-wrapper>
+    <page-text-wrapper>
       <page-sub-header>Already a Volunteer?</page-sub-header>
       <page-text>
         Just click the RideScheduler link to login and report your hours or see what opportunities are available. Remember to check back, as they change frequently! Thank you for all you do!
