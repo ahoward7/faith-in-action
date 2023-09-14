@@ -1,10 +1,10 @@
 <template>
-  <nuxt-layout>
+  <div class="relative">
     <nuxt-loading-indicator :height="5" />
     <fia-navbar class="rem-light" />
     <nuxt-page class="rem"/>
     <fia-footer class="rem-light" />
-  </nuxt-layout>
+  </div>
 </template>
 
 <script setup>

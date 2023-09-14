@@ -2,10 +2,10 @@
   <page-max-1920>
     <page-header>
       <div>
-        <img src="~/assets/images/headers/fia-volunteer.png" class="px-4 xl:px-8 max-h-86">
+        <img src="~/assets/images/headers/fia-volunteer.png" class="px-4 xl:px-8 max-h-64">
       </div>
       <div>
-        <img src="~/assets/images/logos/fia-volunteer-text-yellow.png" class="px-4 xl:px-8 lg:px-0 max-h-32">
+        <img src="~/assets/images/logos/fia-volunteer-text-yellow.png" class="px-4 xl:px-8 lg:px-0 max-h-28">
       </div>
     </page-header>
     <page-text-wrapper>

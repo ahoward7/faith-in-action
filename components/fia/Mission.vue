@@ -1,5 +1,5 @@
 <template>
-  <fia-section>
+  <fia-section style="max-width: 1600px">
     <div class="flex justify-end pb-10">
       <img src="~/assets/images/logos/fia-mission-text.png" class="fr max-h-24 3xl:max-h-32">
     </div>
