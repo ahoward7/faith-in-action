@@ -13,7 +13,7 @@
         Volunteer Today!
       </page-sub-header>
       <page-text>
-        In this critical time of increased need for connection, Faith in Action ST, an interfaith volunteer caregiving program, is here for the Southern Teers area. Our trained volunteers offer free supportive services to the elderly.
+        In this critical time of increased need for connection, Faith in Action STNY, an interfaith volunteer caregiving program, is here for the Southern Teers area. Our trained volunteers offer free supportive services to the elderly.
       </page-text>
       <page-text>
         We are continuously seeking dependable volunteers who are willing to generously dedicate their time to those in need. Your cheerful contribution can make a significant difference in the lives of those we assist.</page-text>
@@ -41,7 +41,7 @@
         Who We Serve
       </page-sub-header>
       <page-text>
-        Faith in Action ST provides services to the elderly living with special needs of STNY, New York. We seek to help those not receiving similar assistance from other programs/social services. Our goal is to be a person's last option, in a most compassionate and caring way. When family members are unavailable, and when other options have been exhausted, Faith in Action can step in and give non-hands on assistance. Often, if we are unable to give the needed assistance, we can refer you to someone that can.
+        Faith in Action STNY provides services to the elderly living with special needs of STNY, New York. We seek to help those not receiving similar assistance from other programs/social services. Our goal is to be a person's last option, in a most compassionate and caring way. When family members are unavailable, and when other options have been exhausted, Faith in Action can step in and give non-hands on assistance. Often, if we are unable to give the needed assistance, we can refer you to someone that can.
       </page-text>
       <page-secondary-header>
         To get a better picture of who we serve, note the following statistics of our care recipients:
@@ -67,7 +67,7 @@
         Where We Serve
       </page-sub-header>
       <page-text>
-        Faith in Action ST provides services to the frail elderly living with special needs of the Southern Teers. We seek to help those not receiving similar assistance from other programs/social services. We provide these services within or near the Southern Teers, as long as we have volunteers in the general area.
+        Faith in Action STNY provides services to the frail elderly living with special needs of the Southern Teers. We seek to help those not receiving similar assistance from other programs/social services. We provide these services within or near the Southern Teers, as long as we have volunteers in the general area.
       </page-text>
       <page-text>
         Communities that we have served are: Addison, Alfred, Almond, Arkport, Atlanta, Beaver Dams, Cameron, Canaseraga, Canisteo, Cohocton, Coopers Plains, Corning, Dansville, Fremont, Greenwood, Hartsville, Hornell, Jasper, Lindley, Painted Post, Troupsburg, Wayland, and Woodhull.

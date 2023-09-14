@@ -7,7 +7,7 @@
       </div>
       <fia-text class="fr text-fia-white" style="padding: 0">
         <div class="max-w-27e rounded-3xl m-auto p-4 lg:p-8 bg-fia-black">
-          "Faith in Action Steuben County is a coalition of congregations, civic groups, 
+          "Faith in Action STNY is a coalition of congregations, civic groups, 
           and individuals working together to serve older adults in need a little assistance
           to continue living independently. This support is provided at no charge to the 
           recipient by caring volunteers, selflessly giving their time and compassion to others."

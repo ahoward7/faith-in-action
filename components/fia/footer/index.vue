@@ -7,7 +7,7 @@
         <fia-footer-info />
       </div>
       <div class="absolute w-full bottom-12 text-md md:text-lg lg:text-xl text-fia-yellow text-center font-semibold">
-        © 2023 Faith in Action Steuben County
+        © 2023 Faith in Action STNY
       </div>
     </div>
   </page-max-1920>
