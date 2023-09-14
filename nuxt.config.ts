@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       charset: 'utf-8',
-      title: 'Faith In Action STNY',
+      title: 'Faith in Action ST',
     }
   },
 })

@@ -1,5 +1,5 @@
 <template>
-  <div class="text max-w-1200 w-full text-xl md:text-3xl lg:text-4xl 2xl:text-5xl rounded-3xl m-auto p-8">
+  <div class="text w-full text-xl lg:text-2xl xl:text-3xl 3xl:text-4xl rounded-3xl m-auto p-8">
     <slot />
   </div>
 </template>

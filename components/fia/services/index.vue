@@ -1,11 +1,11 @@
 <template>
-  <page-max-1920 class="flex p-10 lg:p-20 2xl:py-40">
+  <fia-section>
     <div class="flex justify-center pb-10 lg:pb-20">
-      <img src="~/assets/images/logos/fia-services-text.png" class="fr max-h-36">
+      <img src="~/assets/images/logos/fia-services-text.png" class="fr max-h-28 3xl:max-h-36">
     </div>
     <div class="w-full flex justify-center">
       <div class="w-full max-w-900 2xl:max-w-1200">
-        <fia-text class="fl flex flex-col md:flex-row bg-fia-yellow">
+        <fia-text class="max-w-27e fl flex flex-col md:flex-row bg-fia-yellow">
           <div class="flex justify-center md:justify-start pb-16 md:pb-0">
             <div class="flex flex-col gap-4">
               <fia-services-bullet>Transportation</fia-services-bullet>
@@ -21,5 +21,5 @@
         </fia-text>
       </div>
     </div>
-  </page-max-1920>
+  </fia-section>
 </template>

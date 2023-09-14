@@ -39,12 +39,8 @@ export const contactInfo = {
     value: "ar@fiasteuben.org",
   },
   hornell_phone: {
-    label: "Hornell Phone",
-    value: "(607) 324-1138",
-  },
-  corning_phone: {
-    label: "Corning Phone",
-    value: "(607) 936-0941",
+    label: "Phone",
+    value: "(607) 324-1138 | (607) 936-0941",
   },
   office_hours: {
     label: "Office Hours",
