@@ -1,10 +1,10 @@
 <template>
-  <div class="relative">
+  <nuxt-layout class="relative">
     <nuxt-loading-indicator :height="5" />
     <fia-navbar class="rem-light" />
-    <nuxt-page class="rem"/>
+      <nuxt-page class="rem bg-fia-white"/>
     <fia-footer class="rem-light" />
-  </div>
+  </nuxt-layout>
 </template>
 
 <script setup>
@@ -68,7 +68,24 @@ body {
   font-family: 'RemLight';
   src: local('RemLight'), url(./assets/fonts/REM/static/REM-Light.ttf) format('truetype');
 }
+
 .rem-light {
   font-family: 'RemLight';
+}
+
+.page-enter-active {
+  transition: all .3s;
+}
+
+.page-leave-active {
+  transition: all .3s;
+}
+
+.page-enter-from {
+  opacity: 0;
+}
+
+.page-leave-to {
+  opacity: 0;
 }
 </style>

@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       title: 'Faith in Action STNY',
-    }
+    },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
 })

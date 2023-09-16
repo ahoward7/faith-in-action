@@ -1,5 +1,5 @@
 <template>
-  <page-max-1920 class="sticky top-0 z-50 bg-fia-black">
+  <page-max-1920 class="sticky top-0 z-50 bg-fia-black border-b-2 border-fia-yellow">
     <div class="relative min-h-20 flex justify-center items-center py-4">
       <nuxt-link to="/" class="absolute left-0">
         <img src="~/assets/images/logos/fia-logo.png" class="h-16 md:h-20 xl:h-16 pl-1" />
@@ -7,12 +7,12 @@
       <div class="hidden md:flex justify-center flex-col xl:flex-row gap-6 xl:gap-12">
         <div class="flex justify-center gap-10 xl:gap-12">
           <fia-navbar-item v-for="item in topItems" :key="item.name" :to="item.url">
-            {{ item.name }}
+            <span :class = "isActive(item.url) ? 'text-fia-yellow' : ''">{{ item.name }}</span>
           </fia-navbar-item>
         </div>
         <div class="flex justify-center gap-10 xl:gap-12">
           <fia-navbar-item v-for="item in bottomItems" :key="item.name" :to="item.url">
-            {{ item.name }}
+            <span :class = "isActive(item.url) ? 'text-fia-yellow' : ''">{{ item.name }}</span>
           </fia-navbar-item>
         </div>
       </div>
@@ -34,6 +34,12 @@
 import { navItems } from '~/utils/constants'
 const topItems = navItems.slice(0, navItems.length/2 + 1)
 const bottomItems = navItems.slice(navItems.length/2 + 1)
+
+const route = useRoute()
+
+function isActive(url) {
+  return route.path === url
+}
 
 function openSidebar() {
   const focus = document.querySelector('.bar-focus')
