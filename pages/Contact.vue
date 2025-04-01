@@ -129,13 +129,28 @@ const [state] = defineField('state')
 const [zip] = defineField('zip')
 const [comments] = defineField('comments')
 
+function clearForm() {
+  interest.value = ''
+  first.value = ''
+  last.value = ''
+  email.value = ''
+  phone.value = ''
+  address.value = ''
+  city.value = ''
+  state.value = ''
+  zip.value = ''
+  comments.value = ''
+
+  submitted.value = false
+}
+
 function submitForm() {
   submitted.value = true
   handleSubmit(async (values: any) => {
     try {
-      await $fetch('email', { query: { form: values }})
-
+      await $fetch('/email', { method: 'POST', body: values })
       successSend.value = true
+      clearForm()
     }
     catch (e) {
       console.error(e)

@@ -19,14 +19,12 @@ export default defineEventHandler(async (event: H3Event) => {
   const { sendMail } = useNodeMailer()
 
   try {
-    const { form } = getQuery(event) as { [key: string]: any }
+    const form = await readBody(event) as { [key: string]: any }
 
-    const parsedForm = JSON.parse(form)
-
-    const emailBody = generateEmailTemplate(parsedForm)
+    const emailBody = generateEmailTemplate(form)
 
     await sendMail({
-      subject: `Contact From ${parsedForm.first} ${parsedForm.last}`,
+      subject: `Contact From ${form.first} ${form.last}`,
       html: emailBody,
       to: process.env.EMAIL_TO || 'avery.d.howard@gmail.com',
     })
