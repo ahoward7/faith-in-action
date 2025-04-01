@@ -89,7 +89,7 @@
 .shimmer {
   color: grey;
   mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%;
-  animation: shimmer 5s .5s infinite;
+  animation: shimmer 5s .5s infinite, rotate 1.5s .8s;
 }
 
 @keyframes shimmer {
@@ -98,6 +98,15 @@
   }
   100% {
     mask-position: left;
+  }
+}
+
+@keyframes rotate {
+  30% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 </style>
