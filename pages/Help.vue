@@ -73,15 +73,24 @@
         Other Resources
       </page-sub-header>
       <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
-        <div class="flex justify-center items-center object-contain">
+        <NuxtLink target="_blank" to="https://nvcnetwork.org/" class="flex justify-center items-center object-contain cursor-pointer">
           <img src="~/assets/images/partners/nvcn-logo.jpg" class="w-80 md:w-96">
-        </div>
-        <div class="flex justify-center items-center object-contain">
-          <img src="~/assets/images/partners/uw-logo.jpg" class="w-80 md:w-96">
-        </div>
-        <div class="flex justify-center items-center object-contain">
-          <img src="~/assets/images/logos/fia-logo-transparent.png" class="w-80 md:w-96">
-        </div>
+        </NuxtLink to="">
+        <NuxtLink target="_blank" to="https://www.unitedway.org/" class="flex justify-center items-center object-contain cursor-pointer">
+          <img src="~/assets/images/partners/UW.png" class="w-80 md:w-96">
+        </NuxtLink to="">
+        <NuxtLink target="_blank" to="www.chemungcountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
+          <img src="~/assets/images/partners/ChemungCounty.png" class="w-80 md:w-96">
+        </NuxtLink to="">
+        <NuxtLink target="_blank" to="www.steubencountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
+          <img src="~/assets/images/partners/SteubenCounty.png" class="w-80 md:w-96">
+        </NuxtLink to="">
+        <NuxtLink target="_blank" to="www.ihsnet.org" class="flex justify-center items-center object-contain cursor-pointer">
+          <img src="~/assets/images/partners/IHS.png" class="w-80 md:w-96">
+        </NuxtLink to="">
+        <NuxtLink target="_blank" to="www.nyconnects.ny.gov/services/medical-transportation" class="flex justify-center items-center object-contain cursor-pointer">
+          <img src="~/assets/images/partners/NYS.png" class="w-80 md:w-96">
+        </NuxtLink to="">
       </div>
     </page-text-wrapper>
   </page-max-1920>
