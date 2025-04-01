@@ -1,9 +1,8 @@
 <template>
   <page-max-1920 class="bg-fia-black">
     <div class="relative pb-24">
-      <div class="grid grid-cols-2 2xl:grid-cols-3">
+      <div class="grid grid-cols-2">
         <fia-footer-navbar />
-        <fia-footer-partners class="hidden 2xl:flex" />
         <fia-footer-info />
       </div>
       <div class="absolute w-full bottom-12 text-md md:text-lg lg:text-xl text-fia-yellow text-center font-semibold">

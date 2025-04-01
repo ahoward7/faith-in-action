@@ -5,29 +5,70 @@
       Contact Us
     </page-header>
     <page-text-wrapper>
-      <div class="w-full flex flex-col-reverse xl:flex-row">
-        <div class="basis-1/2">
-          <page-sub-header class="mt-12 xl:mt-0">
-            Contact Form
-          </page-sub-header>
-          <page-text class="flex flex-col items-center gap-8 mt-8">
-            <page-input v-for="item in data" v-model:data="item.data" :label="item.required ? `${item.label} *` : item.label" :type="item.type" :options="item.options" :required="item.required"/>
-            <div v-if="!dataValid" class="text-center bg-fia-red py-1 px-2 rounded-md">
-              Please fill out all the required* fields
+      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-32">
+        <div>
+          <div class="w-full flex flex-col items-center gap-8">
+            <page-sub-header>Contact Form</page-sub-header>
+
+            <div class="w-full">
+              <page-input v-model="interest" placeholder="Reason For Contact" :invalid="submitted && errors.interest" />
+              <p v-if="submitted && errors.interest" class="h-3 mt-1 pl-2 text-[red]">{{ errors.interest }}</p>
             </div>
-            <div v-if="successSend" class="text-center bg-fia-green py-1 px-2 rounded-md">
-              Message sent
+
+            <div class="w-full">
+              <page-input v-model="firstName" placeholder="First Name" :invalid="submitted && errors.firstName" />
+              <p v-if="submitted && errors.firstName" class="h-3 mt-1 pl-2 text-[red]">{{ errors.firstName }}</p>
             </div>
-            <div v-if="errorSend" class="text-center bg-fia-red py-1 px-2 rounded-md">
-              Error sending message, please contact us directly
+
+            <div class="w-full">
+              <page-input v-model="lastName" placeholder="Last Name" :invalid="submitted && errors.lastName" />
+              <p v-if="submitted && errors.lastName" class="h-3 mt-1 pl-2 text-[red]">{{ errors.lastName }}</p>
             </div>
-            <fia-button-home @click="sendEmail">Submit</fia-button-home>
-          </page-text>
+
+            <div class="w-full">
+              <page-input v-model="email" placeholder="Email" :invalid="submitted && errors.email" />
+              <p v-if="submitted && errors.email" class="h-3 mt-1 pl-2 text-[red]">{{ errors.email }}</p>
+            </div>
+
+            <div class="w-full">
+              <page-input v-model="phone" placeholder="Phone" :invalid="submitted && errors.phone" />
+              <p v-if="submitted && errors.phone" class="h-3 mt-1 pl-2 text-[red]">{{ errors.phone }}</p>
+            </div>
+
+            <div class="w-full">
+              <page-input v-model="address" placeholder="Address" :invalid="submitted && errors.address" />
+              <p v-if="submitted && errors.address" class="h-3 mt-1 pl-2 text-[red]">{{ errors.address }}</p>
+            </div>
+
+            <div class="w-full">
+              <page-input v-model="city" placeholder="City" :invalid="submitted && errors.city" />
+              <p v-if="submitted && errors.city" class="h-3 mt-1 pl-2 text-[red]">{{ errors.city }}</p>
+            </div>
+
+            <div class="w-full">
+              <page-input v-model="state" placeholder="State" :invalid="submitted && errors.state" />
+              <p v-if="submitted && errors.state" class="h-3 mt-1 pl-2 text-[red]">{{ errors.state }}</p>
+            </div>
+
+            <div class="w-full">
+              <page-input v-model="zip" placeholder="ZIP Code" :invalid="submitted && errors.zip" />
+              <p v-if="submitted && errors.zip" class="h-3 mt-1 pl-2 text-[red]">{{ errors.zip }}</p>
+            </div>
+
+            <div class="w-full">
+              <page-input v-model="comments" placeholder="Comments" />
+            </div>
+
+            <div v-if="!dataValid" class="text-center bg-[red] py-1 px-2 rounded-md">Please fill out all the required* fields</div>
+            <div v-if="successSend" class="text-center bg-fia-green py-1 px-2 rounded-md">Message sent</div>
+            <div v-if="errorSend" class="text-center bg-[red] py-1 px-2 rounded-md">Error sending message, please contact us directly</div>
+
+            <fia-button-home @click="submitForm">Submit</fia-button-home>
+          </div>
+
         </div>
-        <div class="basis-1/2">
-          <page-sub-header>
-            Contact Info
-          </page-sub-header>
+        <div class="order-first lg:order-last">
+          <page-sub-header>Contact Info</page-sub-header>
           <div class="flex justify-center">
             <div class="max-w-600 flex flex-col gap-4 p-4 mt-8 border-4 border-primary border-fia-yellow rounded-3xl">
               <fia-bullet v-for="info in contactInfo" :label="info.label">{{ info.value }}</fia-bullet>
@@ -39,160 +80,65 @@
   </page-max-1920>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { useForm } from 'vee-validate'
+import * as yup from 'yup'
 import { contactInfo } from '~/utils/constants'
-const dataValid = ref(true)
+
+const submitted = ref(false)
 const successSend = ref(false)
 const errorSend = ref(false)
+const dataValid = ref(true)
 
-const data = ref({
-  interest: {
-    label: 'Reason For Contact',
-    data: '',
-    type: 'select',
-    options: [
-      "I want to learn more about FIA",
-      "I need help",
-      "I know someone who needs help",
-      "I want to volunteer",
-    ]
-  },
-  name: {
-    label: 'Name',
-    data: '',
-    required: true,
-  },
-  email: {
-    label: 'Email',
-    data: '',
-    required: true,
-  },
-  phone: {
-    label: 'Phone',
-    data: '',
-    required: true,
-  },
-  address: {
-    label: 'Address',
-    data: '',
-    required: true,
-  },
-  city: {
-    label: 'City',
-    data: '',
-    required: true,
-  },
-  state: {
-    label: 'State',
-    data: '',
-    required: true,
-  },
-  zip_code: {
-    label: 'Zip Code',
-    data: '',
-    required: true,
-  },
-  source: {
-    label: 'Where Did You Hear About Us?',
-    data: '',
-  },
-  comments: {
-    label: 'Comments',
-    data: '',
-    type: 'textarea'
-  },
+const schema = yup.object({
+  firstName: yup.string().required('First Name is required'),
+  lastName: yup.string().required('Last Name is required'),
+  email: yup.string().email('Invalid email format').required('Email is required'),
+  phone: yup.string().matches(/^[+]?\d{10,15}$/, 'Invalid phone number').required('Phone is required'),
+  address: yup.string().required('Address is required'),
+  city: yup.string().required('City is required'),
+  state: yup.string().required('State is required'),
+  zip: yup.string().matches(/^\d{5}(-\d{4})?$/, 'Invalid ZIP Code').required('ZIP Code is required'),
+  interest: yup.string().required('Reason for contact is required'),
+  comments: yup.string().nullable(),
 })
 
-function sendEmail() {
-  const mail = useMail()
-
-  if (!dataIsValid()) return
-
-  try {
-    mail.send({
-      from: getName(),
-      subject: getSubject(),
-      html: getBody()
-    })
-    success()
+const { defineField, errors, handleSubmit } = useForm({
+  validationSchema: schema,
+  initialValues: {
+    interest: '',
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    address: '',
+    city: '',
+    state: '',
+    zip: '',
+    comments: ''
   }
-  catch (error) {
-    console.log(error)
-    error()
-  }
-}
+})
 
-function success() {
-  Object.values(data.value).forEach(item => item.data = '')
+const [interest] = defineField('interest')
+const [firstName] = defineField('firstName')
+const [lastName] = defineField('lastName')
+const [email] = defineField('email')
+const [phone] = defineField('phone')
+const [address] = defineField('address')
+const [city] = defineField('city')
+const [state] = defineField('state')
+const [zip] = defineField('zip')
+const [comments] = defineField('comments')
 
-  successSend.value = true
-  setTimeout(() => {
-    successSend.value = false
-  }, 3000)
-}
-
-function error() {
-  errorSend.value = true
-  setTimeout(() => {
-    errorSend.value = false
-  }, 3000)
-}
-
-function getName() {
-  const name = data.value.name.data
-
-  if (name === '') return '[No Name]'
-  return name.charAt(0).toUpperCase() + name.slice(1)
-}
-
-function getSubject() {
-  switch (data.value.interest.data) {
-    case "I want to learn more about FIA":
-      return `${getName()} Wants To Learn More About FIA`
-    case "I need help":
-      return `${getName()} Wants Help`
-    case "I know someone who needs help":
-      return `${getName()} Knows Someone Who Needs Help`
-    case "I want to volunteer":
-      return `${getName()} Wants To Volunteer`
-    default:
-      return `${getName()} Wants To Learn More About FIA`
-  }
-}
-
-function getBody() {
-  const bodyStyle = 'font-size: 20px; padding: 10px;'
-  const itemStyle = 'margin-bottom: 20px;'
-  const labelStyle = 'font-weight: bold;'
-  const valueStyle = 'background-color: #f5f5f5; padding: 5px; border-radius: 5px;'
-  let html = ''
-
-  Object.values(data.value).forEach((item, index) => {
-    if (index !== 0) 
-      html += `<div style="${itemStyle}">
-                <span style="${labelStyle}">${item.label}: </span>
-                <span style="${valueStyle}">${item.data}</span>
-              </div>`
-  })
-
-  return `<html>
-            <head></head>
-            <div style="${bodyStyle}">
-              ${html}
-            </div>
-          </html>`
-}
-
-function dataIsValid() {
-  const requiredFields = Object.values(data.value).filter(item => item.required)
-
-  for (let i = 0; i < requiredFields.length; i++) {
-    if (requiredFields[i].data === '') {
-      dataValid.value = false
-      return false
+function submitForm() {
+  submitted.value = true
+  handleSubmit((values: any) => {
+    try {
+      console.log(values)
     }
-  }
-
-  return true
+    catch (e) {
+      console.error(e)
+    }
+  })()
 }
 </script>
