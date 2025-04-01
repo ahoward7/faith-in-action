@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     ],
   },
   nodemailer: {
-    from: 'Faith In Action STNY',
+    from: 'Faith In Action STNY Contact Form <faithinactionstny@gmail.com>',
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,

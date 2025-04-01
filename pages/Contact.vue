@@ -16,13 +16,13 @@
             </div>
 
             <div class="w-full">
-              <page-input v-model="firstName" placeholder="First Name" :invalid="submitted && errors.firstName" />
-              <p v-if="submitted && errors.firstName" class="h-3 mt-1 pl-2 text-[red]">{{ errors.firstName }}</p>
+              <page-input v-model="first" placeholder="First Name" :invalid="submitted && errors.first" />
+              <p v-if="submitted && errors.first" class="h-3 mt-1 pl-2 text-[red]">{{ errors.first }}</p>
             </div>
 
             <div class="w-full">
-              <page-input v-model="lastName" placeholder="Last Name" :invalid="submitted && errors.lastName" />
-              <p v-if="submitted && errors.lastName" class="h-3 mt-1 pl-2 text-[red]">{{ errors.lastName }}</p>
+              <page-input v-model="last" placeholder="Last Name" :invalid="submitted && errors.last" />
+              <p v-if="submitted && errors.last" class="h-3 mt-1 pl-2 text-[red]">{{ errors.last }}</p>
             </div>
 
             <div class="w-full">
@@ -59,7 +59,6 @@
               <page-input v-model="comments" placeholder="Comments" />
             </div>
 
-            <div v-if="!dataValid" class="text-center bg-[red] py-1 px-2 rounded-md">Please fill out all the required* fields</div>
             <div v-if="successSend" class="text-center bg-fia-green py-1 px-2 rounded-md">Message sent</div>
             <div v-if="errorSend" class="text-center bg-[red] py-1 px-2 rounded-md">Error sending message, please contact us directly</div>
 
@@ -91,8 +90,8 @@ const errorSend = ref(false)
 const dataValid = ref(true)
 
 const schema = yup.object({
-  firstName: yup.string().required('First Name is required'),
-  lastName: yup.string().required('Last Name is required'),
+  first: yup.string().required('First Name is required'),
+  last: yup.string().required('Last Name is required'),
   email: yup.string().email('Invalid email format').required('Email is required'),
   phone: yup.string().matches(/^[+]?\d{10,15}$/, 'Invalid phone number').required('Phone is required'),
   address: yup.string().required('Address is required'),
@@ -107,8 +106,8 @@ const { defineField, errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {
     interest: '',
-    firstName: '',
-    lastName: '',
+    first: '',
+    last: '',
     email: '',
     phone: '',
     address: '',
@@ -120,8 +119,8 @@ const { defineField, errors, handleSubmit } = useForm({
 })
 
 const [interest] = defineField('interest')
-const [firstName] = defineField('firstName')
-const [lastName] = defineField('lastName')
+const [first] = defineField('first')
+const [last] = defineField('last')
 const [email] = defineField('email')
 const [phone] = defineField('phone')
 const [address] = defineField('address')
@@ -135,9 +134,13 @@ function submitForm() {
   handleSubmit(async (values: any) => {
     try {
       await $fetch('email', { query: { form: values }})
+
+      successSend.value = true
     }
     catch (e) {
       console.error(e)
+
+      errorSend.value = true
     }
   })()
 }
