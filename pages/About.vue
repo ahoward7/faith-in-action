@@ -1,6 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
+      <img src="~/assets/images/headers/AboutUs.png" class="max-w-20 lg:max-w-48" />
       About Us
     </page-header>
     <page-text-wrapper>

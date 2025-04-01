@@ -1,6 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
+      <img src="~/assets/images/headers/Help.png" class="max-w-20 lg:max-w-48" />
       Need Help?
     </page-header>
     <page-text-wrapper>

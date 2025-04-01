@@ -1,6 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
+      <img src="~/assets/images/headers/ContactUs.png" class="max-w-20 lg:max-w-48" />
       Contact Us
     </page-header>
     <page-text-wrapper>
