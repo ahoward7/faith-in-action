@@ -2,7 +2,7 @@
   <nuxt-layout class="relative">
     <nuxt-loading-indicator :height="5" />
     <fia-navbar class="font-inter" />
-      <nuxt-page class="font-inter bg-fia-white"/>
+      <nuxt-page class="font-inter"/>
     <fia-footer class="font-inter" />
   </nuxt-layout>
 </template>
@@ -48,11 +48,10 @@ onMounted(() => {
 </script>
 
 <style>
-@import './assets/css/transition.css';
-
 body {
   margin: 0;
   padding: 0;
   background-color: theme('colors.fia-white');
+  background-image: url("~/assets/images/little-pluses.png");
 }
 </style>

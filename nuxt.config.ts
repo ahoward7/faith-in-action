@@ -6,9 +6,6 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     'nuxt-nodemailer',
   ],
-  css: [
-    '~/assets/css/main.css',
-  ],
   fonts: {
     families: [
       {
