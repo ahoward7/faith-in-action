@@ -10,28 +10,17 @@
     </page-text-wrapper>
     <page-text-wrapper>
       <page-sub-header>Our Team</page-sub-header>
-      <div class="w-full flex flex-col lg:flex-row gap-16">
-        <page-text-wrapper class="basis-1/2">
+      <div class="w-full flex justify-center">
+        <page-text-wrapper>
           <img src="~/assets/images/angela.png" class="h-60 rounded-3xl border-4 border-fia-black">
           <div class="text-fia-yellow font-nexa text-4xl">
             Angela Jenkins
           </div>
-          <page-text>
+          <page-text class="max-w-[500px] text-blance">
             Angela Jenkins is the office manager at Faith in Action. She has been with
             FIA since 2016. Angela oversees daily operations and efficient functioning of the office, provides
             executive support, and continues to work closely with our volunteers and recipients. Angela
             lives in Hornell with her husband, son, and their dog.
-          </page-text>
-        </page-text-wrapper>
-        <page-text-wrapper class="basis-1/2">
-          <img src="~/assets/images/woman-placeholder.jpg" class="h-60 rounded-3xl border-4 border-fia-black">
-          <div class="text-fia-yellow font-nexa text-4xl">
-            Kathleen Swift
-          </div>
-          <page-text>
-            Kathleen Swift is the program assistant at Faith in Action. She started in
-            September. Kathleen helps with day to day operations, scheduling, and working with our
-            recipients and volunteers. Kathleen lives in Hornell with her husband and 2 daughters.
           </page-text>
         </page-text-wrapper>
       </div>
@@ -39,7 +28,8 @@
     <page-text-wrapper>
       <page-sub-header>Our Impact</page-sub-header>
       <page-text>
-        Since we began in 1995 we have helped thousands of older adults remain in their homes by providing non-hands-on services.
+        Since we began in 1995 we have helped thousands of older adults remain in their homes by providing non-hands-on
+        services.
       </page-text>
       <page-text>
         Faith in Action connects older adults in need with caring volunteers. On average, our volunteers
@@ -69,7 +59,8 @@
     <page-text-wrapper>
       <page-sub-header>Board of Directors</page-sub-header>
       <page-text class="w-full flex justify-center flex-wrap gap-8">
-        <div v-for="member in boardMembers" :key="member" class="w-76 shrink-0 text-center bg-fia-yellow py-2 px-4 rounded-md">
+        <div v-for="member in boardMembers" :key="member"
+          class="w-76 shrink-0 text-center bg-fia-yellow py-2 px-4 rounded-md">
           {{ member }}
         </div>
       </page-text>

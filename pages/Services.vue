@@ -10,12 +10,26 @@
       </page-sub-header>
       <div class="w-full flex flex-col gap-40 lg:gap-20 py-10">
         <fia-services-section>
+          <template #right-header>
+            Transportation
+          </template>
+          <template #right>
+            <fia-bullet>
+              We can provide rides to medical appointments, grocery shopping, and other errands.
+            </fia-bullet>
+          </template>
+          <template #left>
+            <img src="~/assets/images/services/Transportation.png" class="max-w-96">
+          </template>
+        </fia-services-section>
+        <fia-services-section>
           <template #left-header>
             Handyman
           </template>
           <template #left>
             <fia-bullet>
-              We can help with minor home repairs (doors that won't latch, loose step or railing, dripping faucets, etc.)
+              We can help with minor home repairs (doors that won't latch, loose step or railing, dripping faucets,
+              etc.)
             </fia-bullet>
           </template>
           <template #right>
@@ -54,7 +68,8 @@
           </template>
           <template #right>
             <fia-bullet>
-              If the individual doesn't require hands-on assistance, e.g. toileting, feeding, etc., we can have a volunteer sit with them so the caregiver can go out.
+              If the individual doesn't require hands-on assistance, e.g. toileting, feeding, etc., we can have a
+              volunteer sit with them so the caregiver can go out.
             </fia-bullet>
           </template>
           <template #left>
@@ -83,7 +98,8 @@
           </template>
           <template #right>
             <fia-bullet>
-              A volunteer will come run the vacuum, help change the bedding, help with laundry, etc. This is “light housekeeping”, done periodically, not daily
+              A volunteer will come run the vacuum, help change the bedding, help with laundry, etc. This is “light
+              housekeeping”, done periodically, not daily
             </fia-bullet>
           </template>
         </fia-services-section>
