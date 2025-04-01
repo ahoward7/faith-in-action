@@ -4,8 +4,8 @@
       <slot />
     </div>
     <fia-volunteer-box :anchor="anchor" :class="boxStyle">
-      <template v-slot:header>{{ header }}</template>
-      <template v-slot:button>{{ button }}</template>
+      <template #header>{{ header }}</template>
+      <template #button>{{ button }}</template>
     </fia-volunteer-box>
   </div>
 </template>

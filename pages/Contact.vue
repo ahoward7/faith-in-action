@@ -15,7 +15,7 @@
             Contact Form
           </page-sub-header>
           <page-text class="flex flex-col items-center gap-8 mt-8">
-            <page-input v-for="item in data" :label="item.required ? `${item.label} *` : item.label" :type="item.type" v-model:data="item.data" :options="item.options" :required="item.required"/>
+            <page-input v-for="item in data" v-model:data="item.data" :label="item.required ? `${item.label} *` : item.label" :type="item.type" :options="item.options" :required="item.required"/>
             <div v-if="!dataValid" class="text-center bg-fia-red py-1 px-2 rounded-md">
               Please fill out all the required* fields
             </div>

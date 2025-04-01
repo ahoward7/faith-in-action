@@ -98,7 +98,7 @@
       </page-text>
       <page-text>
         <nuxt-link to="https://fiasteuben.securescheduler.org/">
-          <img src="~/assets/images/partners/ride-scheduler-logo.png" class="w-1/2 mx-auto rounded-3xl border-4 border-fia-black" />
+          <img src="~/assets/images/partners/ride-scheduler-logo.png" class="w-1/2 mx-auto rounded-3xl border-4 border-fia-black" >
         </nuxt-link>
       </page-text>
     </page-text-wrapper>

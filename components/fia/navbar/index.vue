@@ -2,7 +2,7 @@
   <page-max-1920 class="sticky top-0 z-50 bg-fia-black border-b-2 border-fia-yellow">
     <div class="relative min-h-20 flex justify-center items-center py-4">
       <nuxt-link to="/" class="absolute left-0">
-        <img src="~/assets/images/logos/fia-logo.png" class="h-16 md:h-20 xl:h-16 pl-1" />
+        <img src="~/assets/images/logos/fia-logo.png" class="h-16 md:h-20 xl:h-16 pl-1" >
       </nuxt-link>
       <div class="hidden md:flex justify-center flex-col xl:flex-row gap-6 xl:gap-12">
         <div class="flex justify-center gap-10 xl:gap-12">
@@ -24,7 +24,7 @@
       </div>
       <div class="bar-focus absolute md:hidden right-0" tabindex="0" @focusout="closeSidebar">
         <img src="~/assets/images/fia-hamburger.png" class="h-12 pr-4 cursor-pointer" @click="openSidebar">
-        <fia-navbar-side @close-sidebar="closeSidebar"></fia-navbar-side>
+        <fia-navbar-side @close-sidebar="closeSidebar"/>
       </div>
     </div>
   </page-max-1920>

@@ -1,38 +1,42 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  typescript: {
-    shim: false,
-  },
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+  modules: [
+    '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/fonts',
+    'nuxt-nodemailer',
+  ],
   css: [
     '~/assets/css/main.css',
   ],
-  modules: [
-    ['nuxt-mail', {
-      message: {
-        to: 'avery.d.howard@gmail.com',
+  fonts: {
+    families: [
+      {
+        provider: 'local',
+        name: 'Nexa',
+        src: '/fonts/nexa-rust/NexaRustHandmade-Extended.otf',
       },
-      smtp: {
-        host: "sandbox.smtp.mailtrap.io",
-        port: 2525,
-        auth: {
-          user: "522c0e974734a0",
-          pass: "582a36586966c8"
-        }
+      {
+        name: 'Inter',
+        provider: 'google',
       },
-    }],
-  ],
+    ],
+  },
+  nodemailer: {
+    from: 'Faith In Action STNY',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+  },
   app: {
     head: {
       charset: 'utf-8',
       title: 'Faith in Action STNY',
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
   },
+  compatibilityDate: '2025-03-31',
 })
