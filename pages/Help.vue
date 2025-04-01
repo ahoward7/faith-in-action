@@ -1,5 +1,5 @@
 <template>
-  <page-max-1920>
+  <page-max-1920 class="overflow-hidden">
     <page-header>
       <img src="~/assets/images/headers/Help.png" class="max-w-20 lg:max-w-48" />
       Need Help?
@@ -72,24 +72,24 @@
       <page-sub-header>
         Other Resources
       </page-sub-header>
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
+      <div class="grid sm:grid-cols-2 2xl:grid-cols-3 gap-12">
         <NuxtLink target="_blank" to="https://nvcnetwork.org/" class="flex justify-center items-center object-contain cursor-pointer">
-          <img src="~/assets/images/partners/nvcn-logo.jpg" class="w-80 md:w-96">
+          <img src="~/assets/images/partners/nvcn-logo.jpg" class="w-40 lg:w-96">
         </NuxtLink to="">
         <NuxtLink target="_blank" to="https://www.unitedway.org/" class="flex justify-center items-center object-contain cursor-pointer">
-          <img src="~/assets/images/partners/UW.png" class="w-80 md:w-96">
+          <img src="~/assets/images/partners/UW.png" class="w-40 lg:w-96">
         </NuxtLink to="">
         <NuxtLink target="_blank" to="www.chemungcountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
-          <img src="~/assets/images/partners/ChemungCounty.png" class="w-80 md:w-96">
+          <img src="~/assets/images/partners/ChemungCounty.png" class="w-40 lg:w-96">
         </NuxtLink to="">
         <NuxtLink target="_blank" to="www.steubencountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
-          <img src="~/assets/images/partners/SteubenCounty.png" class="w-80 md:w-96">
+          <img src="~/assets/images/partners/SteubenCounty.png" class="w-40 lg:w-96">
         </NuxtLink to="">
         <NuxtLink target="_blank" to="www.ihsnet.org" class="flex justify-center items-center object-contain cursor-pointer">
-          <img src="~/assets/images/partners/IHS.png" class="w-80 md:w-96">
+          <img src="~/assets/images/partners/IHS.png" class="w-40 lg:w-96">
         </NuxtLink to="">
         <NuxtLink target="_blank" to="www.nyconnects.ny.gov/services/medical-transportation" class="flex justify-center items-center object-contain cursor-pointer">
-          <img src="~/assets/images/partners/NYS.png" class="w-80 md:w-96">
+          <img src="~/assets/images/partners/NYS.png" class="w-40 lg:w-96">
         </NuxtLink to="">
       </div>
     </page-text-wrapper>

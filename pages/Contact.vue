@@ -132,9 +132,9 @@ const [comments] = defineField('comments')
 
 function submitForm() {
   submitted.value = true
-  handleSubmit((values: any) => {
+  handleSubmit(async (values: any) => {
     try {
-      console.log(values)
+      await $fetch('email', { query: { form: values }})
     }
     catch (e) {
       console.error(e)
