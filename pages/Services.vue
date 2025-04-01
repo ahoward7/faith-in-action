@@ -7,7 +7,7 @@
       <page-sub-header>
         Services We Offer
       </page-sub-header>
-      <div class="w-full flex flex-col gap-20 py-10">
+      <div class="w-full flex flex-col gap-40 lg:gap-20 py-10">
         <fia-services-section>
           <template #left-header>
             Handyman
@@ -18,12 +18,12 @@
             </fia-bullet>
           </template>
           <template #right>
-            <img src="~/assets/images/services/fia-wrench.png" class="max-w-92">
+            <img src="~/assets/images/services/Handyman.png" class="max-w-96">
           </template>
         </fia-services-section>
         <fia-services-section flex-class="flex-col-reverse">
           <template #left>
-            <img src="~/assets/images/services/fia-rake.png" class="max-w-92">
+            <img src="~/assets/images/services/Gardener.png" class="max-w-96">
           </template>
           <template #right-header>
             Yard Work
@@ -44,7 +44,7 @@
             </fia-bullet>
           </template>
           <template #right>
-            <img src="~/assets/images/services/fia-visit.png" class="max-w-92">
+            <img src="~/assets/images/services/FriendlyVisit.png" class="max-w-96">
           </template>
         </fia-services-section>
         <fia-services-section flex-class="flex-col-reverse">
@@ -57,7 +57,7 @@
             </fia-bullet>
           </template>
           <template #left>
-            <img src="~/assets/images/services/fia-care.png" class="max-w-92">
+            <img src="~/assets/images/services/InHomeCare.png" class="max-w-96">
           </template>
         </fia-services-section>
         <fia-services-section>
@@ -70,12 +70,12 @@
             </fia-bullet>
           </template>
           <template #right>
-            <img src="~/assets/images/services/fia-phone.png" class="max-w-92 max-h-130">
+            <img src="~/assets/images/services/PhoneCall.png" class="max-w-96">
           </template>
         </fia-services-section>
         <fia-services-section flex-class="flex-col-reverse">
           <template #left>
-            <img src="~/assets/images/services/fia-vacuum.png" class="max-w-92">
+            <img src="~/assets/images/services/Housekeeping.png" class="max-w-96">
           </template>
           <template #right-header>
             Housekeeping
