@@ -1,12 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
-      <div>
-        <img src="~/assets/images/headers/fia-volunteer.png" class="px-4 xl:px-8 max-h-64">
-      </div>
-      <div>
-        <img src="~/assets/images/logos/fia-volunteer-text-yellow.png" class="px-4 xl:px-8 lg:px-0 max-h-28">
-      </div>
+      Volunteer
     </page-header>
     <page-text-wrapper>
       <page-sub-header>
@@ -87,7 +82,7 @@
           preferences, and location! We offer mileage reimbursement at the current IRS business rate.
         </page-text>
         <div class="basis-1/3 flex justify-center items-center">
-          <fia-button-page to="/contact">Get More Info</fia-button-page>
+          <fia-button-home to="/contact">Get More Info</fia-button-home>
         </div>
       </div>
     </page-text-wrapper>
@@ -98,7 +93,7 @@
       </page-text>
       <page-text>
         <nuxt-link to="https://fiasteuben.securescheduler.org/">
-          <img src="~/assets/images/partners/ride-scheduler-logo.png" class="w-1/2 mx-auto rounded-3xl border-4 border-fia-black" />
+          <img src="~/assets/images/partners/ride-scheduler-logo.png" class="w-1/2 mx-auto rounded-3xl border-4 border-fia-black" >
         </nuxt-link>
       </page-text>
     </page-text-wrapper>

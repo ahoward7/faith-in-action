@@ -1,12 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
-      <div>
-        <img src="~/assets/images/headers/fia-about.png" class="px-4 xl:px-8 max-h-64">
-      </div>
-      <div>
-        <img src="~/assets/images/logos/fia-about-text.png" class="px-4 xl:px-8 max-h-28">
-      </div>
+      About Us
     </page-header>
     <page-text-wrapper>
       <page-sub-header>Our Story</page-sub-header>
@@ -16,18 +11,26 @@
       <page-sub-header>Our Team</page-sub-header>
       <div class="w-full flex flex-col lg:flex-row gap-16">
         <page-text-wrapper class="basis-1/2">
-          <img src="~/assets/images/man-placeholder.jpg" class="h-60 rounded-3xl border-4 border-fia-black">
+          <img src="~/assets/images/angela.png" class="h-60 rounded-3xl border-4 border-fia-black">
+          <div class="text-fia-yellow font-nexa text-4xl">
+            Angela Jenkins
+          </div>
           <page-text>
-            The year was 1995 when I first heard Tippy Irwin talk about a new program starting up that would help the elderly continue to live independently. That program was Interfaith Volunteer Caregivers Program (IVCP). Tippy was the inaugural direcotr of IVCP, and a very dynamic speaker! My lovely wife Kathy recalls that I leaned over to her and said "When we're not busy with kids anymore, I'd like to be involved with that group."
-          </page-text>
-          <page-text>
-            Fast forward to 2003... the grant that is funding my position is running out, making it likely I'll be looking for employment in a few months. Kathy hears that Betty Jones, the then Executive Director of IVCP (which is transitioning it's name to "Faith in Action") is retiring and they are looking for a new director. Long story short, I was fortunate to get an interview and blessed to be hired as the Executive Director, starting the day after Labor Day, 2003! My wish from 1995 came true in a way I never would have expected! It is both humorous and humbling to look back and see how a sovereign God wove my disparate jobs and experiences together for His own purposes and on His own timetable!
+            Angela Jenkins is the office manager at Faith in Action. She has been with
+            FIA since 2016. Angela oversees daily operations and efficient functioning of the office, provides
+            executive support, and continues to work closely with our volunteers and recipients. Angela
+            lives in Hornell with her husband, son, and their dog.
           </page-text>
         </page-text-wrapper>
         <page-text-wrapper class="basis-1/2">
-          <img src="~/assets/images/angela.png" class="h-60 rounded-3xl border-4 border-fia-black">
+          <img src="~/assets/images/woman-placeholder.jpg" class="h-60 rounded-3xl border-4 border-fia-black">
+          <div class="text-fia-yellow font-nexa text-4xl">
+            Kathleen Swift
+          </div>
           <page-text>
-            Angela Jenkins is the office manager at Faith in Action. She has been with FIA since 2016. Angela manages day-to-day operations, scheduling, and works closely with our recipients and volunteers. It will most likely be her friendly voice on the other end of the phone. Angela lives in Hornell with her husband, two sons, and their dog.
+            Kathleen Swift is the program assistant at Faith in Action. She started in
+            September. Kathleen helps with day to day operations, scheduling, and working with our
+            recipients and volunteers. Kathleen lives in Hornell with her husband and 2 daughters.
           </page-text>
         </page-text-wrapper>
       </div>
@@ -38,7 +41,25 @@
         Since we began in 1995 we have helped thousands of older adults remain in their homes by providing non-hands-on services.
       </page-text>
       <page-text>
-        From 2017 through 2020 (even during the pandemic lockdown!) we have provided nearly 17,000 services, over half of those transporting individuals where they needed to go.
+        Faith in Action connects older adults in need with caring volunteers. On average, our volunteers
+        accept one assignment each week which would add up to about 6 hours per month. As a
+        volunteer, you would have the opportunity to accept an assignment according to your
+        availability.
+      </page-text>
+      <page-text>
+        One of our meaningful and rewarding experiences-
+      </page-text>
+      <page-text>
+        We had a recipient whose daughter lived in Pennsylvania. It was very important for him to stay
+        at home, he was very comfortable in his house and loved his neighbors. His daughter contacted
+        us asking if we could help with medical transportation, he had a recurring bi-weekly blood test
+        that he had to have. Our volunteers jumped right into action and before long they were grocery
+        shopping for him, too. The volunteers would scoop his requests up as soon as they were put on
+        the schedule. We would laugh about it, saying it’s a race to see who gets to help him. Everyone
+        loved him! We served him for 4 years and sadly he passed away. He is greatly missed, but it
+        was an honor to serve him. With the help of Faith in Action he was able to do exactly what he
+        wanted to do, stay in his own home. His daughter still calls us occasionally to say thank you and
+        to tell us how much she appreciates our volunteers and staff.
       </page-text>
       <page-text class="flex justify-center">
         <img src="~/assets/images/total-services.png" class="w-full max-w-900 rounded-3xl">
@@ -56,11 +77,10 @@
 </template>
 <script setup>
 import { boardMembers } from '~/utils/constants'
+
 const historyText = [
-  "Faith in Action STNY traces its roots back to January 1995 when it emerged as the 'Interfaith Volunteer Caregivers Program of the Greater Hornell Area.' This initiative was born out of the dedication of a compassionate group hailing from Hornell and its surrounding communities. This group recognized a significant issue: individuals were often discharged from the hospital before they were fully capable of tending to their own needs.",
-  "From this fundamental concern, the concept of IVCP was conceived. After researching similar programs, the organization was established. In 2003, the program underwent a name change to 'Faith in Action of the Greater Hornell Area.' This name transitioned once more, reflecting its broader reach, to 'Faith in Action STNY.' The expansion of services to encompass Corning and the eastern section of the county occurred in the autumn of 2006.",
-  "The inaugural year, 1995, saw an inspiring response with 75 individuals stepping up as volunteers, offering assistance to 60 recipients. These selfless volunteers collectively contributed 1,163 hours and covered 3,661 miles in the process.",
-  "Fast forward twelve years to 2007, and the growth has been remarkable. The volunteer force swelled to 160, aiding over 500 individuals. Their dedication translated into an impressive 5,000 hours of service and a staggering 51,000 miles traveled.",
-  "As the narrative progressed, the 2016 figures highlighted a continued upward trajectory. A team of 175 dedicated volunteers was now supporting 530 recipients, providing a substantial 6,600 service hours and covering an impressive 82,000 miles.",
+  "Faith in Action Steuben was founded in Hornell, NY, in 1995. Initially, we served the towns of Hornell, Arkport, and Canisteo. By 2003, our reach expanded into western Steuben, and by 2007, we had grown to serve eastern Steuben, including Painted Post and Corning. What started as support for just three zip codes soon grew to encompass most of Steuben County.",
+  "In 2023, discussions began about another expansion—this time into a new county where our services were in high demand. After much effort, we successfully extended our reach into Chemung County at the start of 2024. Soon after, mid-year, we were approached to take over the Greater Bath Area in Steuben, further strengthening our presence and impact.",
+  "Through every name change and geographic expansion, one thing has remained constant—our unwavering commitment to helping older adults continue to live independently. As our journey continues, we remain dedicated to serving those in need with compassion and care.",
 ]
 </script>

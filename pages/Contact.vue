@@ -1,12 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
-      <div>
-        <img src="~/assets/images/services/fia-phone.png" class="px-4 xl:px-8 max-h-64">
-      </div>
-      <div>
-        <img src="~/assets/images/logos/fia-contact-text.png" class="px-4 xl:px-8 max-h-24">
-      </div>
+      Contact Us
     </page-header>
     <page-text-wrapper>
       <div class="w-full flex flex-col-reverse xl:flex-row">
@@ -15,7 +10,7 @@
             Contact Form
           </page-sub-header>
           <page-text class="flex flex-col items-center gap-8 mt-8">
-            <page-input v-for="item in data" :label="item.required ? `${item.label} *` : item.label" :type="item.type" v-model:data="item.data" :options="item.options" :required="item.required"/>
+            <page-input v-for="item in data" v-model:data="item.data" :label="item.required ? `${item.label} *` : item.label" :type="item.type" :options="item.options" :required="item.required"/>
             <div v-if="!dataValid" class="text-center bg-fia-red py-1 px-2 rounded-md">
               Please fill out all the required* fields
             </div>
@@ -25,7 +20,7 @@
             <div v-if="errorSend" class="text-center bg-fia-red py-1 px-2 rounded-md">
               Error sending message, please contact us directly
             </div>
-            <fia-button-page @click="sendEmail">Submit</fia-button-page>
+            <fia-button-home @click="sendEmail">Submit</fia-button-home>
           </page-text>
         </div>
         <div class="basis-1/2">

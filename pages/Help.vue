@@ -1,12 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
-      <div>
-        <img src="~/assets/images/headers/fia-help.png" class="px-4 xl:px-8 max-h-64">
-      </div>
-      <div>
-        <img src="~/assets/images/logos/fia-help-text.png" class="px-4 xl:px-8 max-h-28">
-      </div>
+      Need Help?
     </page-header>
     <page-text-wrapper>
       <page-sub-header>Do you need help?</page-sub-header>
@@ -17,7 +12,7 @@
           </page-text>
         </div>
         <div class="basis-1/2 flex justify-center items-center">
-          <fia-button-page to="/contact">Contact Form</fia-button-page>
+          <fia-button-home to="/contact">Contact Form</fia-button-home>
         </div>
       </div>
     </page-text-wrapper>

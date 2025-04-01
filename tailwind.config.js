@@ -15,7 +15,10 @@ module.exports = {
         'fia-blue': '#0041EF',
         'fia-red': '#FFC9C9',
         'fia-green': '#C9FFD1',
-
+      },
+      fontFamily: {
+        nexa: ['Nexa'],
+        inter: ['Inter'],
       },
       height: {
         '9': '2.25rem',
