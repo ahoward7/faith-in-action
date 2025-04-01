@@ -71,7 +71,7 @@
           <div class="w-[300px] xl:w-[500px] text-center max-w-[980px] text-xl/6 lg:text-2xl/8 xl:text-3xl/12 text-balance">
             Help those in need by supporting us with a donation.
           </div>
-          <fia-button-home to="/donate" aria-label="Donate to our cause">
+          <fia-button-home aria-label="Donate to our cause">
             Donate
           </fia-button-home>
         </div>

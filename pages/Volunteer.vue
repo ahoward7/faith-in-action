@@ -1,12 +1,7 @@
 <template>
   <page-max-1920>
     <page-header>
-      <div>
-        <img src="~/assets/images/headers/fia-volunteer.png" class="px-4 xl:px-8 max-h-64">
-      </div>
-      <div>
-        <img src="~/assets/images/logos/fia-volunteer-text-yellow.png" class="px-4 xl:px-8 lg:px-0 max-h-28">
-      </div>
+      Volunteer
     </page-header>
     <page-text-wrapper>
       <page-sub-header>
@@ -87,7 +82,7 @@
           preferences, and location! We offer mileage reimbursement at the current IRS business rate.
         </page-text>
         <div class="basis-1/3 flex justify-center items-center">
-          <fia-button-page to="/contact">Get More Info</fia-button-page>
+          <fia-button-home to="/contact">Get More Info</fia-button-home>
         </div>
       </div>
     </page-text-wrapper>

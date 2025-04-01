@@ -49,16 +49,14 @@ export const contactInfo = {
 }
 
 export const boardMembers = [
-  "President: Dorothy Behan",
-  "Vice President: Heather Lisi",
+  "President: Heather Lisi",
+  "Vice President: Amy Irvine",
   "Treasurer: Kate Paterson",
-  "Secretary: TBD",
-  "Christy Balliett",
-  "Carolin Campbell",
-  "Amy Irvine",
+  "Secretary: Simone White",
+  "Louise McIntosh",
+  "Lynn Decher",
   "Ellen Mason",
-  "Bill Gunther",
-  "Janet Farnsworth",
+  "Carolin Campbell",
   "David Barnard"
 ]
 
