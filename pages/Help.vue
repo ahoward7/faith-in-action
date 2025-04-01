@@ -79,16 +79,16 @@
         <NuxtLink target="_blank" to="https://www.unitedway.org/" class="flex justify-center items-center object-contain cursor-pointer">
           <img src="~/assets/images/partners/UW.png" class="w-40 lg:w-96">
         </NuxtLink to="">
-        <NuxtLink target="_blank" to="www.chemungcountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
+        <NuxtLink target="_blank" to="https://www.chemungcountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
           <img src="~/assets/images/partners/ChemungCounty.png" class="w-40 lg:w-96">
         </NuxtLink to="">
-        <NuxtLink target="_blank" to="www.steubencountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
+        <NuxtLink target="_blank" to="https://www.steubencountyny.gov" class="flex justify-center items-center object-contain cursor-pointer">
           <img src="~/assets/images/partners/SteubenCounty.png" class="w-40 lg:w-96">
         </NuxtLink to="">
-        <NuxtLink target="_blank" to="www.ihsnet.org" class="flex justify-center items-center object-contain cursor-pointer">
+        <NuxtLink target="_blank" to="https://www.ihsnet.org" class="flex justify-center items-center object-contain cursor-pointer">
           <img src="~/assets/images/partners/IHS.png" class="w-40 lg:w-96">
         </NuxtLink to="">
-        <NuxtLink target="_blank" to="www.nyconnects.ny.gov/services/medical-transportation" class="flex justify-center items-center object-contain cursor-pointer">
+        <NuxtLink target="_blank" to="https://www.nyconnects.ny.gov/services/medical-transportation" class="flex justify-center items-center object-contain cursor-pointer">
           <img src="~/assets/images/partners/NYS.png" class="w-40 lg:w-96">
         </NuxtLink to="">
       </div>
