@@ -26,6 +26,11 @@ export const navItems = [
   {
     name: 'Contact Us',
     url: '/contact'
+  },
+  {
+    name: 'IRS F-990',
+    url: 'https://www.irs.gov/pub/irs-pdf/f990.pdf',
+    target: '_blank'
   }
 ]
 
