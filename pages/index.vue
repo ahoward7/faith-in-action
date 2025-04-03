@@ -104,7 +104,7 @@
 <style scoped>
 .image-container {
   position: relative;
-  background-image: url('~/assets/images/little-pluses.png/');
+  background-image: url('~/assets/images/little-pluses.png');
 }
 
 .image-container img {
