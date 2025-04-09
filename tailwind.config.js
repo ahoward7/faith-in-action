@@ -66,6 +66,7 @@ module.exports = {
         '1920': '1920px',
       },
       screens: {
+        'xs': '480px',
         '3xl': '1920px',
       },
       lineHeight: {

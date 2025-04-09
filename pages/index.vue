@@ -1,18 +1,21 @@
 <template>
   <div>
     <div class="flex flex-col">
-      <PageMax1600 class=" my-16">
-        <div class="grid grid-cols-2">
-          <div class="flex flex-col gap-8 justify-center">
-            <div class="font-nexa text-5xl text-fia-black">
-              <span>A</span>
-              <span> Neighbor<span class="font-inter lg:-mx-1">'</span>s</span>
-              <PageYellowText> Independence</PageYellowText>
-              <br>
-              <span>Depends On</span>
-              <PageYellowText> You</PageYellowText>
+      <PageMax1600 class="my-4 md:my-8 xl:my-16">
+        <div class="grid xl:grid-cols-2 gap-8 xs:gap-16 xl:gap-0">
+          <div class="flex flex-col gap-8 justify-center order-2 xl:order-1">
+            <div class="font-nexa text-2xl xs:text-3xl md:text-5xl text-fia-black text-center xl:text-left">
+              <div class="whitespace-nowrap">
+                <span>A</span>
+                <span> Neighbor<span class="font-inter lg:-mx-1">'</span>s </span>
+                <PageYellowText>Independence </PageYellowText>
+              </div>
+              <div>
+                <span>Depends On</span>
+                <PageYellowText> You</PageYellowText>
+              </div>
             </div>
-            <div class="max-w-[700px] text-xl text-balance leading-8">
+            <div class="max-w-[700px] md:text-xl text-center xl:text-left text-balance leading-8">
               <p>
                 Faith in Action STNY is a coalition of congregations, civic groups,
                 and individuals working together to serve older adults who need a little assistance
@@ -30,20 +33,20 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-col items-center gap-8">
-            <fia-logo class="w-64 shimmer" alt="FIA Logo" />
+          <div class="flex xl:flex-col items-center justify-center gap-4 xs:gap-8 order-1 xl:order-2">
+            <fia-logo class="w-24 xs:w-40 md:w-64 shimmer" alt="FIA Logo" />
             <img
-              src="~/assets/images/logos/fia-text-transparent.png" class="w-[400px]"
+              src="~/assets/images/logos/fia-text-transparent.png" class="w-40 xs:w-60 md:w-[400px]"
               alt="Faith in Action Text Logo"
             >
           </div>
         </div>
       </PageMax1600>
-      <PageMax1600 class="bg-fia-yellow/10 my-16 py-16">
-        <div class="font-nexa text-5xl text-center text-fia-yellow mb-16">
+      <PageMax1600 class="bg-fia-yellow/10 my-4 md:my-8 xl:my-16 py-8 xl:py-16">
+        <div class="font-nexa text-4xl xl:text-5xl text-center text-fia-yellow mb-8 xl:mb-16">
           Our Services
         </div>
-        <div class="max-w-[1200px] grid grid-cols-3 gap-8">
+        <div class="max-w-[1200px] grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
           <PageServiceCard>
             <template #img>
               <img src="~/assets/images/services/Transportation.png" class="max-w-40">
@@ -117,14 +120,14 @@
           </PageServiceCard>
         </div>
       </PageMax1600>
-      <PageMax1600 class="my-16">
-        <div class="w-full grid grid-cols-2 gap-32">
-          <div class="flex flex-col gap-8 items-center">
-            <div class="font-nexa text-5xl text-fia-yellow">
+      <PageMax1600 class="my-4 md:my-8 xl:my-16">
+        <div class="w-full grid md:grid-cols-2 gap-8 xl:gap-16">
+          <div class="flex flex-col gap-4 xl:gap-8 items-center">
+            <div class="font-nexa text-4xl xl:text-5xl text-center text-fia-yellow">
               Want To Help?
             </div>
-            <div class="flex flex-col gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
-              <span class="max-w-[500px] text-balance text-center text-xl">
+            <div class="flex flex-col gap-4 xl:gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
+              <span class="max-w-[500px] text-balance text-center xl:text-xl">
                 We're always looking for dependable volunteers to generously share their time and make a meaningful impact.
               </span>
               <FiaButton to="/volunteer" aria-label="Sign up to volunteer">
@@ -132,12 +135,12 @@
               </FiaButton>
             </div>
           </div>
-          <div class="flex flex-col gap-8 items-center">
-            <div class="font-nexa text-5xl text-fia-yellow">
+          <div class="flex flex-col gap-4 xl:gap-8 items-center">
+            <div class="font-nexa text-4xl xl:text-5xl text-center text-fia-yellow">
               Do You Need Help?
             </div>
-            <div class="max-w-[500px] flex flex-col gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
-              <span class="text-balance text-center text-xl">
+            <div class="max-w-[500px] flex flex-col gap-4 xl:gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
+              <span class="text-balance text-center xl:text-xl">
                 If you or a loved one could use some assistance, our caring volunteers are here to offer free support and companionship.
               </span>
               <FiaButton to="/help" aria-label="Find Assistance">
@@ -147,28 +150,28 @@
           </div>
         </div>
       </PageMax1600>
-      <PageMax1600 class="mt-16 py-16 bg-fia-yellow/10">
-        <div class="font-nexa text-5xl text-center text-fia-yellow mb-16">
+      <PageMax1600 class="mt-8 xl:mt-16 py-8 xl:py-16 bg-fia-yellow/10">
+        <div class="font-nexa text-4xl xl:text-5xl text-center text-fia-yellow mb-8 xl:mb-16">
           Our Partners
         </div>
-        <div class="grid sm:grid-cols-2 2xl:grid-cols-3 gap-24">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 sm:gap-8 md:gap-16 2xl:gap-24">
           <FiaResource url="https://nvcnetwork.org/">
-            <img src="~/assets/images/partners/nvcn-logo.jpg" class="w-40 lg:w-60">
+            <img src="~/assets/images/partners/nvcn-logo.jpg" class="w-28 sm:w-40 lg:w-60">
           </FiaResource>
           <FiaResource url="https://www.unitedway.org/">
-            <img src="~/assets/images/partners/UW.png" class="w-40 lg:w-60">
+            <img src="~/assets/images/partners/UW.png" class="w-28 sm:w-40 lg:w-60">
           </FiaResource>
           <FiaResource url="https://www.chemungcountyny.gov" img-class="rounded-full">
-            <img src="~/assets/images/partners/ChemungCounty.png" class="w-40 lg:w-60">
+            <img src="~/assets/images/partners/ChemungCounty.png" class="w-28 sm:w-40 lg:w-60">
           </FiaResource>
-          <FiaResource url="https://www.steubencountyny.gov" img-class="h-60 rounded-full overflow-hidden">
-            <img src="~/assets/images/partners/SteubenCounty.png" class="w-40 lg:w-60 mt-[12px] scale-[1.2]">
+          <FiaResource url="https://www.steubencountyny.gov" img-class="w-28 sm:w-40 lg:w-60 rounded-full overflow-hidden">
+            <img src="~/assets/images/partners/SteubenCounty.png" class="w-28 sm:w-40 lg:w-60 scale-[1.1]">
           </FiaResource>
           <FiaResource url="https://www.ihsnet.org">
-            <img src="~/assets/images/partners/IHS.png" class="w-40 lg:w-60">
+            <img src="~/assets/images/partners/IHS.png" class="w-28 sm:w-40 lg:w-60">
           </FiaResource>
           <FiaResource url="https://www.nyconnects.ny.gov/services/medical-transportation">
-            <img src="~/assets/images/partners/NYS.png" class="w-40 lg:w-60">
+            <img src="~/assets/images/partners/NYS.png" class="w-28 sm:w-40 lg:w-60">
           </FiaResource>
         </div>
       </PageMax1600>
@@ -177,25 +180,6 @@
 </template>
 
 <style scoped>
-.image-container {
-  position: relative;
-  background-image: url('~/assets/images/little-pluses.png');
-}
-
-.image-container img {
-  max-height: 100%;
-  max-width: 85%;
-  object-fit: cover;
-
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
-}
-
-.container {
-  max-width: 90%;
-  contain: content;
-}
-
 .shimmer {
   color: grey;
   mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%;
