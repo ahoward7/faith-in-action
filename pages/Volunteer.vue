@@ -105,9 +105,9 @@
             preferences, and location! We offer mileage reimbursement at the current IRS business rate.
           </page-text>
           <div class="basis-1/3 flex justify-center items-center">
-            <fia-button-home to="/contact">
+            <FiaButton to="/contact">
               Get More Info
-            </fia-button-home>
+            </FiaButton>
           </div>
         </div>
       </page-text-wrapper>

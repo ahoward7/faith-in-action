@@ -90,9 +90,9 @@
                   contact us directly
                 </div>
 
-                <fia-button-home @click="submitForm">
+                <FiaButton @click="submitForm">
                   Submit
-                </fia-button-home>
+                </FiaButton>
               </div>
             </div>
             <div class="order-first lg:order-last">

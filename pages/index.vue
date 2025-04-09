@@ -127,9 +127,9 @@
               <span class="max-w-[500px] text-balance text-center text-xl">
                 We're always looking for dependable volunteers to generously share their time and make a meaningful impact.
               </span>
-              <FiaButtonHome to="/volunteer" aria-label="Sign up to volunteer">
+              <FiaButton to="/volunteer" aria-label="Sign up to volunteer">
                 Get Involved Today
-              </FiaButtonHome>
+              </FiaButton>
             </div>
           </div>
           <div class="flex flex-col gap-8 items-center">
@@ -140,9 +140,9 @@
               <span class="text-balance text-center text-xl">
                 If you or a loved one could use some assistance, our caring volunteers are here to offer free support and companionship.
               </span>
-              <FiaButtonHome to="/help" aria-label="Find Assistance">
+              <FiaButton to="/help" aria-label="Find Assistance">
                 Find A Helping Hand
-              </FiaButtonHome>
+              </FiaButton>
             </div>
           </div>
         </div>

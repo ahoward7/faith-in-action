@@ -15,9 +15,9 @@
             </page-text>
           </div>
           <div class="basis-1/2 flex justify-center items-center">
-            <fia-button-home to="/contact">
+            <FiaButton to="/contact">
               Contact Form
-            </fia-button-home>
+            </FiaButton>
           </div>
         </div>
       </page-text-wrapper>
