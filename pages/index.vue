@@ -42,7 +42,7 @@
           </div>
         </div>
       </PageMax1600>
-      <PageMax1600 class="bg-fia-yellow/10 my-4 md:my-8 xl:my-16 py-8 xl:py-16">
+      <PageMax1600 class="border-y-2 border-fia-yellow/20 bg-gradient-to-br from-fia-yellow/10 to-fia-red/10 my-4 md:my-8 xl:my-16 py-8 xl:py-16">
         <div class="font-nexa text-4xl xl:text-5xl text-center text-fia-yellow mb-8 xl:mb-16">
           Our Services
         </div>
@@ -150,7 +150,7 @@
           </div>
         </div>
       </PageMax1600>
-      <PageMax1600 class="mt-8 xl:mt-16 py-8 xl:py-16 bg-fia-yellow/10">
+      <PageMax1600 class="mt-8 xl:mt-16 py-8 xl:py-16 border-y-2 border-fia-yellow/20 bg-gradient-to-bl from-fia-yellow/10 to-fia-red/10">
         <div class="font-nexa text-4xl xl:text-5xl text-center text-fia-yellow mb-8 xl:mb-16">
           Our Partners
         </div>
