@@ -3,19 +3,19 @@
     <div class="thing hover:scale-105 duration-300" :class="imgClass">
       <slot class="" />
     </div>
-  </NuxtLink to="">
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
 defineProps({
   url: {
     type: String,
-    default: 'https://nvcnetwork.org/'
+    default: 'https://nvcnetwork.org/',
   },
   imgClass: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 

@@ -6,6 +6,11 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     'nuxt-nodemailer',
   ],
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
   fonts: {
     families: [
       {
