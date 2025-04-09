@@ -1,7 +1,9 @@
 <template>
   <div class="w-full flex flex-col sm:text-xl" :class="wrapperClass">
-    <div class="max-w-2xl rounded-2xl border-4 border-dotted px-6 py-5 leading-5 sm:leading-10"
-      :class="testimonialClass">
+    <div
+      class="max-w-2xl rounded-2xl border-4 border-dotted px-6 py-5 leading-5 sm:leading-10"
+      :class="testimonialClass"
+    >
       {{ text }}
     </div>
     <div class="py-2 sm:py-6 px-12">
@@ -28,7 +30,7 @@ const props = defineProps({
     type: String,
     default: '',
   },
-});
+})
 
-const { name, text, wrapperClass, testimonialClass } = toRefs(props);
+const { name, text, wrapperClass, testimonialClass } = toRefs(props)
 </script>

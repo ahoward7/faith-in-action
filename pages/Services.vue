@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header>
-      <img src="~/assets/images/headers/Services.png" class="max-w-28" />
+      <img src="~/assets/images/headers/Services.png" class="max-w-28">
       Our Services
     </page-header>
     <page-max-1920>

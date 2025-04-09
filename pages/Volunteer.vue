@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header>
-      <img src="~/assets/images/headers/Volunteer.png" class="max-w-36" />
+      <img src="~/assets/images/headers/Volunteer.png" class="max-w-36">
       Volunteer Today
     </page-header>
     <page-max-1920>
@@ -14,7 +14,8 @@
         <page-text>
           We are continuously seeking dependable volunteers who are willing to generously dedicate their time to those
           in need. Your cheerful contribution can make a significant difference in the lives of those we
-          assist.</page-text>
+          assist.
+        </page-text>
         <page-secondary-header>
           We are looking for volunteers who can help with the following:
         </page-secondary-header>
@@ -104,7 +105,9 @@
             preferences, and location! We offer mileage reimbursement at the current IRS business rate.
           </page-text>
           <div class="basis-1/3 flex justify-center items-center">
-            <fia-button-home to="/contact">Get More Info</fia-button-home>
+            <fia-button-home to="/contact">
+              Get More Info
+            </fia-button-home>
           </div>
         </div>
       </page-text-wrapper>
@@ -116,8 +119,10 @@
         </page-text>
         <page-text>
           <nuxt-link to="https://fiasteuben.securescheduler.org/">
-            <img src="~/assets/images/partners/ride-scheduler-logo.png"
-              class="w-1/2 mx-auto rounded-3xl border-4 border-fia-black">
+            <img
+              src="~/assets/images/partners/ride-scheduler-logo.png"
+              class="w-1/2 mx-auto rounded-3xl border-4 border-fia-black"
+            >
           </nuxt-link>
         </page-text>
       </page-text-wrapper>

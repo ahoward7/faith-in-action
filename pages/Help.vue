@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header>
-      <img src="~/assets/images/headers/Help.png" class="max-w-28" />
+      <img src="~/assets/images/headers/Help.png" class="max-w-28">
       Do You Need Help?
     </page-header>
     <page-max-1920 class="overflow-hidden">
@@ -15,7 +15,9 @@
             </page-text>
           </div>
           <div class="basis-1/2 flex justify-center items-center">
-            <fia-button-home to="/contact">Contact Form</fia-button-home>
+            <fia-button-home to="/contact">
+              Contact Form
+            </fia-button-home>
           </div>
         </div>
       </page-text-wrapper>

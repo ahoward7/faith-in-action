@@ -1,13 +1,15 @@
 <template>
   <div>
     <page-header>
-      <img src="~/assets/images/headers/AboutUs.png" class="max-w-20" />
+      <img src="~/assets/images/headers/AboutUs.png" class="max-w-20">
       About Us
     </page-header>
     <page-max-1920>
       <page-text-wrapper>
         <page-sub-header>Our Story</page-sub-header>
-        <page-text v-for="text in historyText" :key="text">{{ text }}</page-text>
+        <page-text v-for="text in historyText" :key="text">
+          {{ text }}
+        </page-text>
       </page-text-wrapper>
       <page-text-wrapper>
         <page-sub-header>Our Team</page-sub-header>
@@ -61,8 +63,10 @@
       <page-text-wrapper>
         <page-sub-header>Board of Directors</page-sub-header>
         <page-text class="w-full flex justify-center flex-wrap gap-8">
-          <div v-for="member in boardMembers" :key="member"
-            class="w-76 shrink-0 text-center bg-fia-yellow py-2 px-4 rounded-md">
+          <div
+            v-for="member in boardMembers" :key="member"
+            class="w-76 shrink-0 text-center bg-fia-yellow py-2 px-4 rounded-md"
+          >
             {{ member }}
           </div>
         </page-text>
@@ -70,12 +74,13 @@
     </page-max-1920>
   </div>
 </template>
+
 <script setup>
 import { boardMembers } from '~/utils/constants'
 
 const historyText = [
-  "Faith in Action Steuben was founded in Hornell, NY, in 1995. Initially, we served the towns of Hornell, Arkport, and Canisteo. By 2003, our reach expanded into western Steuben, and by 2007, we had grown to serve eastern Steuben, including Painted Post and Corning. What started as support for just three zip codes soon grew to encompass most of Steuben County.",
-  "In 2023, discussions began about another expansion—this time into a new county where our services were in high demand. After much effort, we successfully extended our reach into Chemung County at the start of 2024. Soon after, mid-year, we were approached to take over the Greater Bath Area in Steuben, further strengthening our presence and impact.",
-  "Through every name change and geographic expansion, one thing has remained constant—our unwavering commitment to helping older adults continue to live independently. As our journey continues, we remain dedicated to serving those in need with compassion and care.",
+  'Faith in Action Steuben was founded in Hornell, NY, in 1995. Initially, we served the towns of Hornell, Arkport, and Canisteo. By 2003, our reach expanded into western Steuben, and by 2007, we had grown to serve eastern Steuben, including Painted Post and Corning. What started as support for just three zip codes soon grew to encompass most of Steuben County.',
+  'In 2023, discussions began about another expansion—this time into a new county where our services were in high demand. After much effort, we successfully extended our reach into Chemung County at the start of 2024. Soon after, mid-year, we were approached to take over the Greater Bath Area in Steuben, further strengthening our presence and impact.',
+  'Through every name change and geographic expansion, one thing has remained constant—our unwavering commitment to helping older adults continue to live independently. As our journey continues, we remain dedicated to serving those in need with compassion and care.',
 ]
 </script>

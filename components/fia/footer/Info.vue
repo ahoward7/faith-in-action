@@ -6,7 +6,7 @@
       </div>
       <div class="flex justify-center items-center my-2 lg:my-4">
         <nuxt-link to="https://www.facebook.com/fiasteuben/" target="_blank" class="cursor">
-          <img src="~/assets/images/logos/facebook.png" class="h-8 md:h-16" >
+          <img src="~/assets/images/logos/facebook.png" class="h-8 md:h-16">
         </nuxt-link>
       </div>
       <div v-for="info in bottomInformation" class="text-sm md:text-lg lg:text-xl text-fia-yellow font-semibold">
@@ -17,8 +17,9 @@
 </template>
 
 <script setup>
-import { contactInfo } from '~/utils/constants';
+import { contactInfo } from '~/utils/constants'
+
 const bottomInformation = [
-  "Website by: Avery Howard",
+  'Website by: Avery Howard',
 ]
 </script>

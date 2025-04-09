@@ -31,12 +31,12 @@
 const props = defineProps({
   number: {
     type: Number,
-    required: false
+    required: false,
   },
   label: {
     type: String,
-    required: false
-  }
+    required: false,
+  },
 })
 const { number } = props
 </script>

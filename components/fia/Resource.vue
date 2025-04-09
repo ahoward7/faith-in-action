@@ -10,12 +10,12 @@
 defineProps({
   url: {
     type: String,
-    default: 'https://nvcnetwork.org/'
+    default: 'https://nvcnetwork.org/',
   },
   imgClass: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 

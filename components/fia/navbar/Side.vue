@@ -10,7 +10,8 @@
 </template>
 
 <script setup>
-import { navItems } from '~/utils/constants';
+import { navItems } from '~/utils/constants'
+
 const emit = defineEmits(['close-sidebar'])
 function closeSidebar() {
   emit('close-sidebar')

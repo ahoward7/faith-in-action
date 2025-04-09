@@ -32,6 +32,7 @@
 
 <script setup>
 import { navItems } from '~/utils/constants'
+
 const topItems = navItems.slice(0, navItems.length / 2)
 const bottomItems = navItems.slice(navItems.length / 2)
 

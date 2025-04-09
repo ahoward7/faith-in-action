@@ -19,7 +19,7 @@
 const props = defineProps({
   flexClass: {
     type: String,
-    default: 'flex-col'
-  }
+    default: 'flex-col',
+  },
 })
 </script>

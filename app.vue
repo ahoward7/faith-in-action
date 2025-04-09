@@ -2,7 +2,7 @@
   <nuxt-layout class="relative">
     <nuxt-loading-indicator :height="5" />
     <fia-navbar class="font-inter" />
-      <nuxt-page class="font-inter"/>
+    <nuxt-page class="font-inter" />
     <fia-footer class="font-inter" />
   </nuxt-layout>
 </template>
