@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full flex flex-col sm:text-xl 2xl:text-2xl" :class="wrapperClass">
-    <div class="max-w-3xl rounded-3xl border-4 border-dotted p-4 2xl:p-6 leading-5 sm:leading-10 2xl:leading-12"
+  <div class="w-full flex flex-col sm:text-xl" :class="wrapperClass">
+    <div class="max-w-2xl rounded-2xl border-4 border-dotted px-6 py-5 leading-5 sm:leading-10"
       :class="testimonialClass">
       {{ text }}
     </div>

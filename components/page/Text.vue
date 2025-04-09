@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sm:text-xl leading-8">
+  <div class="w-full leading-6">
     <slot />
   </div>
 </template>
