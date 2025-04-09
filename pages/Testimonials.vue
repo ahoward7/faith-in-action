@@ -1,33 +1,37 @@
 <template>
   <div>
-    <page-header>
+    <PageHeader>
       <img src="~/assets/images/headers/Testimonials.png" class="max-w-28">
       Testimonials
-    </page-header>
-    <page-max-1920>
-      <page-text-wrapper>
-        <page-sub-header>
+    </PageHeader>
+    <PageMax1600>
+      <PageTextWrapper>
+        <PageSubHeader>
           From Our Clients
-        </page-sub-header>
+        </PageSubHeader>
         <div class="w-full py-4">
-          <fia-testimonial
-            v-for="testimonial, index in clientTestimonials" :name="testimonial.name"
+          <FiaTestimonial
+            v-for="testimonial, index in clientTestimonials"
+            :key="testimonial.name"
+            :name="testimonial.name"
             :text="testimonial.text" :wrapper-class="index % 2 === 0 ? '' : 'items-end'"
             :testimonial-class="index % 2 === 0 ? 'border-fia-yellow' : 'border-fia-black'" class="my-2 lg:my-6"
           />
         </div>
-        <page-sub-header>
+        <PageSubHeader>
           From Our Volunteers
-        </page-sub-header>
+        </PageSubHeader>
         <div class="w-full py-4">
-          <fia-testimonial
-            v-for="testimonial, index in volunteerTestimonials" :name="testimonial.name"
+          <FiaTestimonial
+            v-for="testimonial, index in volunteerTestimonials"
+            :key="testimonial.name"
+            :name="testimonial.name"
             :text="testimonial.text" :wrapper-class="index % 2 === 0 ? '' : 'items-end'"
             :testimonial-class="index % 2 === 0 ? 'border-fia-yellow' : 'border-fia-black'" class="my-2 lg:my-6"
           />
         </div>
-      </page-text-wrapper>
-    </page-max-1920>
+      </PageTextWrapper>
+    </PageMax1600>
   </div>
 </template>
 

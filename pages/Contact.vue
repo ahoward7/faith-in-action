@@ -1,19 +1,19 @@
 <template>
   <div>
-    <page-header>
+    <PageHeader>
       <img src="~/assets/images/headers/ContactUs.png" class="max-w-28">
       Contact Us
-    </page-header>
-    <page-max-1920>
+    </PageHeader>
+    <PageMax1600>
       <div class="w-full flex justify-center py-10">
         <div class="max-w-[1200px] w-full flex flex-col items-center gap-4 sm:gap-8">
           <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <div class="w-full flex flex-col items-center gap-8">
-                <page-sub-header>Contact Form</page-sub-header>
+                <PageSubHeader>Contact Form</PageSubHeader>
 
                 <div class="w-full">
-                  <page-input
+                  <PageInput
                     v-model="interest" placeholder="Reason For Contact"
                     :invalid="submitted && errors.interest"
                   />
@@ -23,63 +23,63 @@
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="first" placeholder="First Name" :invalid="submitted && errors.first" />
+                  <PageInput v-model="first" placeholder="First Name" :invalid="submitted && errors.first" />
                   <p v-if="submitted && errors.first" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.first }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="last" placeholder="Last Name" :invalid="submitted && errors.last" />
+                  <PageInput v-model="last" placeholder="Last Name" :invalid="submitted && errors.last" />
                   <p v-if="submitted && errors.last" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.last }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="email" placeholder="Email" :invalid="submitted && errors.email" />
+                  <PageInput v-model="email" placeholder="Email" :invalid="submitted && errors.email" />
                   <p v-if="submitted && errors.email" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.email }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="phone" placeholder="Phone" :invalid="submitted && errors.phone" />
+                  <PageInput v-model="phone" placeholder="Phone" :invalid="submitted && errors.phone" />
                   <p v-if="submitted && errors.phone" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.phone }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="address" placeholder="Address" :invalid="submitted && errors.address" />
+                  <PageInput v-model="address" placeholder="Address" :invalid="submitted && errors.address" />
                   <p v-if="submitted && errors.address" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.address }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="city" placeholder="City" :invalid="submitted && errors.city" />
+                  <PageInput v-model="city" placeholder="City" :invalid="submitted && errors.city" />
                   <p v-if="submitted && errors.city" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.city }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="state" placeholder="State" :invalid="submitted && errors.state" />
+                  <PageInput v-model="state" placeholder="State" :invalid="submitted && errors.state" />
                   <p v-if="submitted && errors.state" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.state }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="zip" placeholder="ZIP Code" :invalid="submitted && errors.zip" />
+                  <PageInput v-model="zip" placeholder="ZIP Code" :invalid="submitted && errors.zip" />
                   <p v-if="submitted && errors.zip" class="h-3 mt-1 pl-2 text-[red]">
                     {{ errors.zip }}
                   </p>
                 </div>
 
                 <div class="w-full">
-                  <page-input v-model="comments" placeholder="Comments" />
+                  <PageInput v-model="comments" placeholder="Comments" />
                 </div>
 
                 <div v-if="successSend" class="text-center bg-fia-green py-1 px-2 rounded-md">
@@ -96,7 +96,7 @@
               </div>
             </div>
             <div class="order-first lg:order-last">
-              <page-sub-header>Contact Info</page-sub-header>
+              <PageSubHeader>Contact Info</PageSubHeader>
               <div class="flex justify-center">
                 <div
                   class="flex flex-col gap-4 bg-fia-yellow/10 border-2 border-fia-yellow/40 px-4 py-3 mt-8 border-primary rounded-2xl"
@@ -110,7 +110,7 @@
           </div>
         </div>
       </div>
-    </page-max-1920>
+    </PageMax1600>
   </div>
 </template>
 
