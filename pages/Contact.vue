@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader>
-      <img src="~/assets/images/headers/ContactUs.png" class="max-w-28">
+      <img src="~/assets/images/headers/ContactUs.png" class="max-w-16 sm:max-w-28">
       Contact Us
     </PageHeader>
     <PageMax1600>

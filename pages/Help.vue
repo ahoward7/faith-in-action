@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader>
-      <img src="~/assets/images/headers/Help.png" class="max-w-28">
+      <img src="~/assets/images/headers/Help.png" class="max-w-16 sm:max-w-28">
       Do You Need Help?
     </PageHeader>
     <PageMax1600 class="overflow-hidden">
