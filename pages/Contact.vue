@@ -99,9 +99,9 @@
               <page-sub-header>Contact Info</page-sub-header>
               <div class="flex justify-center">
                 <div
-                  class="flex flex-col gap-4 text-white bg-gradient-to-br  from-fia-yellow to-fia-yellow/70 px-4 py-3 mt-8 border-primary rounded-2xl"
+                  class="flex flex-col gap-4 bg-fia-yellow/10 border-2 border-fia-yellow/40 px-4 py-3 mt-8 border-primary rounded-2xl"
                 >
-                  <fia-bullet v-for="info in contactInfo" :label="info.label">
+                  <fia-bullet v-for="info in contactInfo" :key="info.label" :label="info.label">
                     {{ info.value }}
                   </fia-bullet>
                 </div>
@@ -122,7 +122,6 @@ import { contactInfo } from '~/utils/constants'
 const submitted = ref(false)
 const successSend = ref(false)
 const errorSend = ref(false)
-const dataValid = ref(true)
 
 const schema = yup.object({
   first: yup.string().required('First Name is required'),

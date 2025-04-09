@@ -87,31 +87,6 @@
           purchased.
         </fia-bullet>
       </page-text-wrapper>
-      <page-text-wrapper>
-        <page-sub-header>
-          Other Resources
-        </page-sub-header>
-        <div class="grid sm:grid-cols-2 2xl:grid-cols-3 gap-24">
-          <fia-resource url="https://nvcnetwork.org/">
-            <img src="~/assets/images/partners/nvcn-logo.jpg" class="w-40 lg:w-80">
-          </fia-resource>
-          <fia-resource url="https://www.unitedway.org/">
-            <img src="~/assets/images/partners/UW.png" class="w-40 lg:w-80">
-          </fia-resource>
-          <fia-resource url="https://www.chemungcountyny.gov" img-class="rounded-full">
-            <img src="~/assets/images/partners/ChemungCounty.png" class="w-40 lg:w-80">
-          </fia-resource>
-          <fia-resource url="https://www.steubencountyny.gov" img-class="h-80 rounded-full overflow-hidden">
-            <img src="~/assets/images/partners/SteubenCounty.png" class="w-40 lg:w-80 mt-4 scale-[1.2]">
-          </fia-resource>
-          <fia-resource url="https://www.ihsnet.org">
-            <img src="~/assets/images/partners/IHS.png" class="w-40 lg:w-80">
-          </fia-resource>
-          <fia-resource url="https://www.nyconnects.ny.gov/services/medical-transportation">
-            <img src="~/assets/images/partners/NYS.png" class="w-40 lg:w-80">
-          </fia-resource>
-        </div>
-      </page-text-wrapper>
     </page-max-1920>
   </div>
 </template>

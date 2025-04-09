@@ -43,71 +43,135 @@
         <div class="font-nexa text-5xl text-center text-fia-yellow mb-16">
           Our Services
         </div>
-        <div class="max-w-[1200px] grid grid-cols-3">
-          <div class="flex flex-col items-center bg-white px-16 py-12 rounded-xl shadow-lg">
-            <img src="~/assets/images/services/Transportation.png" class="max-w-40">
-            <div class="text-3xl text-fia-black font-bold font-nexa">
+        <div class="max-w-[1200px] grid grid-cols-3 gap-8">
+          <PageServiceCard>
+            <template #img>
+              <img src="~/assets/images/services/Transportation.png" class="max-w-40">
+            </template>
+            <template #header>
               Transportation
+            </template>
+            <template #text>
+              We can provide rides to medical appointments, grocery shopping, and other errands.
+            </template>
+          </PageServiceCard>
+
+          <PageServiceCard>
+            <template #img>
+              <img src="~/assets/images/services/Handyman.png" class="max-w-40">
+            </template>
+            <template #header>
+              Handyman
+            </template>
+            <template #text>
+              We can help with minor home repairs (doors that won't latch, loose step or railing, dripping faucets, etc.)
+            </template>
+          </PageServiceCard>
+
+          <PageServiceCard>
+            <template #img>
+              <img src="~/assets/images/services/Gardener.png" class="max-w-40">
+            </template>
+            <template #header>
+              Yard Work
+            </template>
+            <template #text>
+              Volunteers can do seasonal yard work, but we do not offer weekly mowing.
+            </template>
+          </PageServiceCard>
+
+          <PageServiceCard>
+            <template #img>
+              <img src="~/assets/images/services/FriendlyVisit.png" class="max-w-40">
+            </template>
+            <template #header>
+              Friendly Visits & In<span class="font-inter">-</span>Home Care
+            </template>
+            <template #text>
+              A volunteer can visit to keep you company or sit with someone who doesn’t need hands-on help (e.g., toileting, feeding) so the caregiver can take a break.
+            </template>
+          </PageServiceCard>
+
+          <PageServiceCard>
+            <template #img>
+              <img src="~/assets/images/services/PhoneCall.png" class="max-w-40">
+            </template>
+            <template #header>
+              Telephone Reassurance
+            </template>
+            <template #text>
+              A volunteer will give you a call on a regular basis to check in and visit.
+            </template>
+          </PageServiceCard>
+
+          <PageServiceCard>
+            <template #img>
+              <img src="~/assets/images/services/Housekeeping.png" class="max-w-40">
+            </template>
+            <template #header>
+              Housekeeping
+            </template>
+            <template #text>
+              A volunteer will come run the vacuum, help change the bedding, help with laundry, etc. This is “light housekeeping”, done periodically, not daily.
+            </template>
+          </PageServiceCard>
+        </div>
+      </PageMax1600>
+      <PageMax1600 class="my-16">
+        <div class="w-full grid grid-cols-2 gap-32">
+          <div class="flex flex-col gap-8 items-center">
+            <div class="font-nexa text-5xl text-fia-yellow">
+              Want To Help?
             </div>
-            <span class="mt-4 text-balance text-center text-gray-500">We can provide rides to medical appointments, grocery shopping, and other errands.</span>
+            <div class="flex flex-col gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
+              <span class="max-w-[500px] text-balance text-center text-xl">
+                We're always looking for dependable volunteers to generously share their time and make a meaningful impact.
+              </span>
+              <FiaButtonHome to="/volunteer" aria-label="Sign up to volunteer">
+                Get Involved Today
+              </FiaButtonHome>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 items-center">
+            <div class="font-nexa text-5xl text-fia-yellow">
+              Do You Need Help?
+            </div>
+            <div class="max-w-[500px] flex flex-col gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
+              <span class="text-balance text-center text-xl">
+                If you or a loved one could use some assistance, our caring volunteers are here to offer free support and companionship.
+              </span>
+              <FiaButtonHome to="/help" aria-label="Find Assistance">
+                Find A Helping Hand
+              </FiaButtonHome>
+            </div>
           </div>
         </div>
       </PageMax1600>
-      <!--
-      <div class="container w-full flex justify-evenly sm:px-8 py-8 lg:py-16 xl:py-24 3xl:py-32">
-        <div class="hidden md:block content-center">
-          <div class="w-fit h-full mx-auto content-center image-container max-h-[240px] lg:max-h-[300px] xl:max-h-[100%]">
-            <img src="~/assets/images/logos/Services.png" alt="Faith In Action Services" class="object-cover"
-              loading="lazy" />
-          </div>
+      <PageMax1600 class="mt-16 py-16 bg-fia-yellow/10">
+        <div class="font-nexa text-5xl text-center text-fia-yellow mb-16">
+          Our Partners
         </div>
-        <div class="flex flex-col gap-6 lg:gap-12 xl:gap-24 items-center">
-          <div class="font-nexa text-4xl lg:text-6xl xl:text-8xl text-fia-yellow whitespace-nowrap">Our Services</div>
-          <div class="max-w-[980px] grid lg:grid-cols-2 gap-8 lg:gap-16 text-xl/6 lg:text-2xl/8 xl:text-3xl/12">
-            <div class="flex flex-col gap-4">
-              <fia-services-bullet>Transportation</fia-services-bullet>
-              <fia-services-bullet>Friendly Visits</fia-services-bullet>
-              <fia-services-bullet>Home Repairs</fia-services-bullet>
-              <fia-services-bullet>Housekeeping</fia-services-bullet>
-            </div>
-            <div class="flex justify-center items-center">
-              <fia-button-home to="/services" aria-label="Learn more about our services">Learn More</fia-button-home>
-            </div>
-          </div>
+        <div class="grid sm:grid-cols-2 2xl:grid-cols-3 gap-24">
+          <FiaResource url="https://nvcnetwork.org/">
+            <img src="~/assets/images/partners/nvcn-logo.jpg" class="w-40 lg:w-60">
+          </FiaResource>
+          <FiaResource url="https://www.unitedway.org/">
+            <img src="~/assets/images/partners/UW.png" class="w-40 lg:w-60">
+          </FiaResource>
+          <FiaResource url="https://www.chemungcountyny.gov" img-class="rounded-full">
+            <img src="~/assets/images/partners/ChemungCounty.png" class="w-40 lg:w-60">
+          </FiaResource>
+          <FiaResource url="https://www.steubencountyny.gov" img-class="h-60 rounded-full overflow-hidden">
+            <img src="~/assets/images/partners/SteubenCounty.png" class="w-40 lg:w-60 mt-[12px] scale-[1.2]">
+          </FiaResource>
+          <FiaResource url="https://www.ihsnet.org">
+            <img src="~/assets/images/partners/IHS.png" class="w-40 lg:w-60">
+          </FiaResource>
+          <FiaResource url="https://www.nyconnects.ny.gov/services/medical-transportation">
+            <img src="~/assets/images/partners/NYS.png" class="w-40 lg:w-60">
+          </FiaResource>
         </div>
-      </div>
-      <div
-        class="w-full flex flex-col 2xl:flex-row justify-center items-center gap-8 xl:gap-16 3xl:gap-32 py-8 lg:py-16 xl:py-24 3xl:py-32 bg-fia-yellow">
-        <div class="flex flex-col gap-6 lg:gap-12 xl:gap-24 items-center">
-          <div class="font-nexa text-4xl lg:text-6xl xl:text-8xl text-fia-black">Volunteer</div>
-          <div class="flex flex-col gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
-            <div
-              class="w-[300px] xl:w-[500px] text-center max-w-[980px] text-xl/6 lg:text-2xl/8 xl:text-3xl/12 text-balance">
-              Learn about different ways you can serve the older generation.
-            </div>
-            <fia-button-home to="/volunteer" aria-label="Sign up to volunteer">
-              Sign Up
-            </fia-button-home>
-          </div>
-        </div>
-        <div>
-          <img src="~/assets/images/logos/Heart.png" alt="Faith In Action Heart"
-            class="h-28 xl:h-40 3xl:h-60 object-cover" loading="lazy" />
-        </div>
-        <div class="flex flex-col gap-6 lg:gap-12 xl:gap-24 items-center">
-          <div class="font-nexa text-4xl lg:text-6xl xl:text-8xl text-fia-black">Donate</div>
-          <div class="flex flex-col gap-8 items-center bg-fia-white px-4 pt-4 pb-8 rounded-xl">
-            <div
-              class="w-[300px] xl:w-[500px] text-center max-w-[980px] text-xl/6 lg:text-2xl/8 xl:text-3xl/12 text-balance">
-              Help those in need by supporting us with a donation.
-            </div>
-            <fia-button-home target="_blank" to="https://www.paypal.com/donate/?hosted_button_id=PLDCK2H2BJ7U2"
-              aria-label="Donate to our cause">
-              Donate
-            </fia-button-home>
-          </div>
-        </div>
-      </div> -->
+      </PageMax1600>
     </div>
   </div>
 </template>

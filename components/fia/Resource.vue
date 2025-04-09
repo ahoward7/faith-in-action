@@ -3,7 +3,7 @@
     <div class="thing hover:scale-105 duration-300" :class="imgClass">
       <slot class="" />
     </div>
-  </NuxtLink to="">
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
