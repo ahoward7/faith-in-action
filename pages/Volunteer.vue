@@ -19,31 +19,33 @@
         <PageSecondaryHeader>
           We are looking for volunteers who can help with the following:
         </PageSecondaryHeader>
-        <FiaBullet>
-          Light Housekeeping and Visiting: Requests for aid in light housekeeping and friendly visits are pouring in
-          from the Corning/Painted Post area. Volunteer shortages in this region are hindering our assistance. If you're
-          interested or know someone who could help, please reach out.
-        </FiaBullet>
-        <FiaBullet>
-          Wednesday Drivers Needed: Wednesdays present challenges for finding drivers, especially in the southeastern
-          county (Hornby, Caton, Lindley, Coopers Plains, Corning, Painted Post). Urgent appointments occasionally can't
-          be rescheduled. Could you spare a few hours on Wednesdays to assist?
-        </FiaBullet>
-        <FiaBullet>
-          Drivers Required in Canisteo/Greenwood and Wayland/Cohocton: Additional drivers are needed in
-          Canisteo/Greenwood and Wayland/Cohocton. While grateful for dedicated volunteers making multiple trips weekly,
-          we aim to avoid overwhelming them. Can you help by transporting someone to town once or twice a month?
-        </FiaBullet>
-        <FiaBullet>
-          Tech-Savvy Volunteers for Elderly Care: Seeking individuals with technical skills to connect elderly care
-          recipients with distant loved ones via video conferencing (Skype, Google Hangouts, FaceTime). Bring joy and
-          connection to their lives.
-        </FiaBullet>
-        <FiaBullet>
-          Ramp Building Apprentices: Our ramp building team seeks apprentice volunteers with strength. Currently focused
-          on the western county (Arkport/Hornell/Canisteo), personnel availability is the only limitation. Join our team
-          or learn from them to contribute across STNY. Contact us today!
-        </FiaBullet>
+        <PageText class="flex flex-col gap-2 ml-2 -mt-4">
+          <FiaBullet>
+            Light Housekeeping and Visiting: Requests for aid in light housekeeping and friendly visits are pouring in
+            from the Corning/Painted Post area. Volunteer shortages in this region are hindering our assistance. If you're
+            interested or know someone who could help, please reach out.
+          </FiaBullet>
+          <FiaBullet>
+            Wednesday Drivers Needed: Wednesdays present challenges for finding drivers, especially in the southeastern
+            county (Hornby, Caton, Lindley, Coopers Plains, Corning, Painted Post). Urgent appointments occasionally can't
+            be rescheduled. Could you spare a few hours on Wednesdays to assist?
+          </FiaBullet>
+          <FiaBullet>
+            Drivers Required in Canisteo/Greenwood and Wayland/Cohocton: Additional drivers are needed in
+            Canisteo/Greenwood and Wayland/Cohocton. While grateful for dedicated volunteers making multiple trips weekly,
+            we aim to avoid overwhelming them. Can you help by transporting someone to town once or twice a month?
+          </FiaBullet>
+          <FiaBullet>
+            Tech-Savvy Volunteers for Elderly Care: Seeking individuals with technical skills to connect elderly care
+            recipients with distant loved ones via video conferencing (Skype, Google Hangouts, FaceTime). Bring joy and
+            connection to their lives.
+          </FiaBullet>
+          <FiaBullet>
+            Ramp Building Apprentices: Our ramp building team seeks apprentice volunteers with strength. Currently focused
+            on the western county (Arkport/Hornell/Canisteo), personnel availability is the only limitation. Join our team
+            or learn from them to contribute across STNY. Contact us today!
+          </FiaBullet>
+        </PageText>
       </PageTextWrapper>
       <PageTextWrapper>
         <PageSubHeader>
@@ -59,21 +61,23 @@
         <PageSecondaryHeader>
           To get a better picture of who we serve, note the following statistics of our care recipients:
         </PageSecondaryHeader>
-        <FiaBullet>
-          85% Female
-        </FiaBullet>
-        <FiaBullet>
-          15% Male
-        </FiaBullet>
-        <FiaBullet>
-          33% between 60-74
-        </FiaBullet>
-        <FiaBullet>
-          55% over age 75
-        </FiaBullet>
-        <FiaBullet>
-          66% live alone
-        </FiaBullet>
+        <PageText class="flex flex-col gap-2 ml-2 -mt-4">
+          <FiaBullet>
+            85% Female
+          </FiaBullet>
+          <FiaBullet>
+            15% Male
+          </FiaBullet>
+          <FiaBullet>
+            33% between 60-74
+          </FiaBullet>
+          <FiaBullet>
+            55% over age 75
+          </FiaBullet>
+          <FiaBullet>
+            66% live alone
+          </FiaBullet>
+        </PageText>
       </PageTextWrapper>
       <PageTextWrapper>
         <PageSubHeader>
@@ -113,18 +117,17 @@
       </PageTextWrapper>
       <PageTextWrapper>
         <PageSubHeader>Already a Volunteer?</PageSubHeader>
-        <PageText>
-          Just click the RideScheduler link to login and report your hours or see what opportunities are available.
-          Remember to check back, as they change frequently! Thank you for all you do!
-        </PageText>
-        <PageText>
-          <nuxt-link to="https://fiasteuben.securescheduler.org/">
-            <img
-              src="~/assets/images/partners/ride-scheduler-logo.png"
-              class="w-1/2 mx-auto rounded-3xl border-4 border-fia-black"
-            >
-          </nuxt-link>
-        </PageText>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <PageText>
+            Just click the RideScheduler link to login and report your hours or see what opportunities are available.
+            Remember to check back, as they change frequently! Thank you for all you do!
+          </PageText>
+          <PageText class="flex justify-center">
+            <nuxt-link to="https://fiasteuben.securescheduler.org/" class="border-2 border-fia-red hover:brightness-90 duration-300 rounded-md md:rounded-xl overflow-hidden">
+              <img src="~/assets/images/partners/ride-scheduler-logo.png">
+            </nuxt-link>
+          </PageText>
+        </div>
       </PageTextWrapper>
     </PageMax1600>
   </div>
