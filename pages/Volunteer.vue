@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader>
-      <img src="~/assets/images/headers/Volunteer.png" class="max-w-20 sm:max-w-36">
+      <img src="~/assets/images/headers/Volunteer.png" class="max-w-20 md:max-w-36">
       Volunteer Today
     </PageHeader>
     <PageMax1600>

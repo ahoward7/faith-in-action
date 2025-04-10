@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader>
-      <img src="~/assets/images/headers/AboutUs.png" class="max-w-12 sm:max-w-20">
+      <img src="~/assets/images/headers/AboutUs.png" class="max-w-12 md:max-w-20">
       About Us
     </PageHeader>
     <PageMax1600>

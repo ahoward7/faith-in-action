@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
     'nuxt-nodemailer',
+    '@vueuse/nuxt',
   ],
   eslint: {
     config: {
