@@ -56,8 +56,8 @@
           wanted to do, stay in his own home. His daughter still calls us occasionally to say thank you and
           to tell us how much she appreciates our volunteers and staff.
         </PageText>
-        <PageText class="flex justify-center">
-          <img src="~/assets/images/total-services.png" class="w-full max-w-900 rounded-3xl">
+        <PageText>
+          <FiaTotalServicesChart />
         </PageText>
       </PageTextWrapper>
       <PageTextWrapper>
